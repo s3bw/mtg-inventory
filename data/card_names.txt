@@ -1,0 +1,363 @@
+Abattoir Ghoul
+Abuna Acolyte
+Act of Treason
+Aerial Assault
+Agonizing Remorse
+Air Elemental
+"Alirios, Enraptured"
+All That Glitters
+Alseid of Life's Bounty
+Altar of the Pantheon
+Ancestral Blade
+Angel of Vitality
+Angelic Gift
+Angelic Skirmisher
+Anvilwrought Raptor
+"Aphemia, the Cacophony"
+Appetite for Brains
+Archon of Absolution
+Archon of Falling Stars
+Ardenvale Paladin
+Ardenvale Tactician // Dizzying Swoop
+Armillary Sphere
+Aspect of Lamprey
+Assault Griffin
+Bane Alley Broker
+Banishing Light
+Barge In
+Barrow Witches
+Barter in Blood
+Battalion Foot Soldier
+Beacon of Unrest
+Befuddle
+Beloved Princess
+Bishop of Wings
+Blight-Breath Catoblepas
+Blind Obedience
+Bloodcrazed Paladin
+Bloodhaze Wolverine
+Blossoming Sands
+Blow Your House Down
+Bonds of Faith
+Bone Splinters
+Bone to Ash
+Boneclad Necromancer
+Boreal Elemental
+Brimstone Trebuchet
+Brine Giant
+Brineborn Cutthroat
+Bronze Sword
+Burning-Yard Trainer
+Bushmeat Poacher
+Butcher Ghoul
+Butcher's Cleaver
+Captain of the Mists
+Captivating Unicorn
+Cathedral Sanctifier
+Cauldron Familiar
+Chain to Memory
+Chainer's Torment
+Champion of the Parish
+Chapel Geist
+Chastise
+Claim the Firstborn
+Cling to Dust
+Clockwork Servant
+Clone
+Cloudkin Seer
+Cobbled Wings
+Commanding Presence
+Compelling Deterrence
+Congregate
+Contentious Plan
+Corridor Monitor
+Corrupted Conscience
+Crackling Perimeter
+Crashing Drawbridge
+Dawn Evangel
+Dawn of Hope
+Dawning Angel
+"Daxos, Blessed by the Sun"
+Daybreak Chaplain
+Deafening Silence
+Dearly Departed
+Deathless Knight
+Deny the Divine
+Diamond Knight
+Dimir Doppelganger
+Diregraf Captain
+Diregraf Ghoul
+Disciple of the Old Ways
+Discordant Piper
+Disenchant
+Dismal Backwater
+Dive Down
+Doom Blade
+Doom Foretold
+Doomed Traveler
+Drag to the Underworld
+Dread Return
+Driver of the Dead
+Dusk Legion Zealot
+Dwarven Mine
+Edgewall Innkeeper
+Eerie Interlude
+Elite Instructor
+Elspeth's Nightmare
+Emancipation Angel
+Embereth Shieldbreaker // Battle Display
+Embereth Shieldbreaker // Battle Display
+Emeria Angel
+Enchanted Carriage
+Enemy of Enlightenment
+Eternal Skylord
+Evil Twin
+Evolving Wilds
+Eye Collector
+Faerie Guidemother // Gift of the Fae
+Falkenrath Noble
+"Feather, the Redeemed"
+Fencing Ace
+Ferocity of the Wilds
+Fertilid
+Field of the Dead
+Fiend Hunter
+Final Death
+Fire Prophecy
+Fling
+Flutterfox
+Forbidden Alchemy
+Fortifying Provisions
+Frenzied Arynx
+Frost Lynx
+Frostveil Ambush
+Fruit of Tizerus
+Funeral Rites
+Garenbrig Carver // Shield's Might
+Garenbrig Squire
+Gather the Townsfolk
+Geist of Saint Traft
+Ghoulraiser
+Giant Killer // Chop Down
+Giant Opportunity
+Gingerbrute
+Glass Casket
+Gleaming Overseer
+Glimpse of Freedom
+Gloom Pangolin
+Gods Willing
+Golden Egg
+Goldenglow Moth
+Goldnight Redeemer
+Gravecrawler
+Gravedigger
+Gray Merchant of Asphodel
+Griffin Protector
+Griffin Sentinel
+Gryff Vanguard
+Gutter Skulk
+Harvester of Souls
+Havengul Runebinder
+Heliod's Punishment
+Henge Walker
+Herald of Torment
+Heraldic Banner
+Human Frailty
+Ichthyomorphosis
+Idyllic Grange
+Impassioned Orator
+Improbable Alliance
+Increasing Devotion
+Indomitable Will
+Inevitable End
+Infuriate
+Insatiable Appetite
+Inspired Charge
+Irencrag Feat
+Ivy Elemental
+Joust
+"Kambal, Consul of Allocation"
+Karametra's Blessing
+Keensight Mentor
+Kingpin's Pet
+Knight of the Keep
+Knight Watch
+Lagonna-Band Storyteller
+Lampad of Death's Vigil
+Last Thoughts
+Leafkin Druid
+Lightning Stormkin
+Locthwain Paladin
+Lonesome Unicorn // Rider in Need
+Lord of the Accursed
+Mad Ratter
+Makeshift Mauler
+Maniacal Rage
+Mantle of Tides
+Martyr of Sands
+Mass Calcify
+Medomai's Prophecy
+Memory Drain
+Memory Theft
+Merchant of the Vale // Haggle
+Mindwrack Demon
+Minion's Return
+Mire Triton
+Mire's Grasp
+Mist Raven
+Mistford River Turtle
+Moan of the Unhallowed
+Moldervine Reclamation
+Moment of Heroism
+Momentary Blink
+Moonlit Scavengers
+Mortus Strider
+Mysterious Egg
+Mysterious Pathlighter
+Mythos of Vadrok
+Naiad of Hidden Coves
+Negate
+Nephalia Smuggler
+Noosegraf Mob
+Nyx-Fleece Ram
+Nyxborn Courser
+Nyxborn Marauder
+Nyxborn Seaguard
+Ogre Errant
+Oketra's Monument
+Omen of the Dead
+Omen of the Sea
+Omen of the Sun
+One with the Stars
+Outflank
+Path of Bravery
+Pattern Matcher
+Phalanx Tactics
+Pharika's Spawn
+Pious Wayfarer
+Plague Belcher
+Plains
+Planar Cleansing
+Pore Over the Pages
+Prismite
+Pyroceratops
+Rabid Bite
+Raging Redcap
+Rally for the Throne
+Reaper of Night // Harvest Fear
+Reaver Ambush
+Rebuke
+Redcap Raiders
+Regal Leosaur
+Relentless Skaabs
+Requiem Angel
+Retributive Wand
+Return to Nature
+Revoke Existence
+Righteousness
+Rimrock Knight // Boulder Rush
+Riptide Turtle
+Roving Keep
+Rule of Law
+Sanguine Sacrament
+Sanitarium Skeleton
+Scalding Cauldron
+Scavenging Harpy
+Scorch Spitter
+Scorching Dragonfire
+Scoured Barrens
+Scrapskin Drake
+Screeching Skaab
+Scuttlemutt
+Sea God's Scorn
+Searing Barrage
+Segovian Angel
+Seraph of Dawn
+Serene Steward
+Seven Dwarves
+Sever the Bloodline
+Shaper Apprentice
+Sharpened Pitchfork
+Shining Armor
+Shipwreck Looter
+Silverflame Ritual
+Silverflame Squire // On Alert
+Simic Fluxmage
+Siren Lookout
+Skinbrand Goblin
+Skyblinder Staff
+Slayer of the Wicked
+Sleep of the Dead
+Smitten Swordmaster // Curry Favor
+So Tiny
+Solid Footing
+Soul Manipulation
+Soul Warden
+Soulmender
+Spectral Gateguards
+Spinning Wheel
+Spire Mangler
+Starlit Mantle
+Steadfast Sentry
+Stern Dismissal
+Stinging Lionfish
+Stitched Drake
+Sunmane Pegasus
+"Syr Faren, the Hengehammer"
+"Taigam, Sidisi's Hand"
+Tainted Remedy
+Tandem Lookout
+"Taranika, Akroan Veteran"
+Temple of Epiphany
+Temple Thief
+Thaumaturge's Familiar
+The Birth of Meletis
+Thicket Crasher
+Thirst for Meaning
+Thraben Heretic
+Threnody Singer
+Thrill of Possibility
+Thrummingbird
+Tooth Collector
+Topplegeist
+Totally Lost
+Tower Geist
+Towering-Wave Mystic
+Tranquil Cove
+Trapped in the Tower
+Tribute to Hunger
+Triton Waverider
+True Love's Kiss
+Tuinvale Treefolk // Oaken Boon
+Twilight Panther
+Unbreathing Horde
+Undead Augur
+Undercity Scavenger
+Underworld Charger
+Underworld Connections
+Underworld Dreams
+Unexplained Vision
+Unholy Indenture
+"Uro, Titan of Nature's Wrath"
+Venomous Hierophant
+Vial of Dragonfire
+Vicious Conquistador
+Victim of Night
+Village Bell-Ringer
+Vizkopa Guildmage
+Voice of the Provinces
+Watertrap Weaver
+Weapon Rack
+Weaselback Redcap
+Whirlwind Denial
+Wilt
+Wind Strider
+Wishclaw Talisman
+Witch's Cottage
+Witness of Tomorrows
+Wolfkin Bond
+Wonder
+Yarok's Fenlurker
+Yoked Ox
+"Yorvo, Lord of Garenbrig"
+Youthful Knight

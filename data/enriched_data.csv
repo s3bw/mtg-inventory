@@ -1,0 +1,615 @@
+oracle_text,cmc,name,keywords,toughness,power,type_line,mana_cost,rarity,colors,color_identity,edhrec_rank
+"When Dusk Legion Zealot enters the battlefield, you draw a card and you lose 1 life.",2.0,Dusk Legion Zealot,[],1,1,Creature — Vampire Soldier,{1}{B},common,['B'],['B'],1753
+"Flying
+Whenever Goldenglow Moth blocks, you may gain 4 life.",1.0,Goldenglow Moth,['Flying'],1,0,Creature — Insect,{W},common,['W'],['W'],10790
+"{T}: Add one mana of any color.
+{T}: Target creature becomes the color or colors of your choice until end of turn.",3.0,Scuttlemutt,[],2,2,Artifact Creature — Scarecrow,{3},uncommon,[],[],3328
+"Whenever you draw your second card each turn, create two 1/1 black Rat creature tokens.",4.0,Mad Ratter,[],2,1,Creature — Goblin,{3}{R},uncommon,['R'],['R'],8323
+"At the beginning of each player's upkeep, that player sacrifices a nonland, nontoken permanent. If that player can't, they discard a card, they lose 2 life, you draw a card, you gain 2 life, you create a 2/2 white Knight creature token with vigilance, then you sacrifice Doom Foretold.",4.0,Doom Foretold,[],,,Enchantment,{2}{W}{B},rare,"['B', 'W']","['B', 'W']",7251
+,1.0,Faerie Guidemother // Gift of the Fae,['Flying'],1,1,Creature — Faerie // Sorcery — Adventure,{W} // {1}{W},common,['W'],['W'],8707
+Flying,5.0,Air Elemental,['Flying'],4,4,Creature — Elemental,{3}{U}{U},uncommon,['U'],['U'],11233
+"Haste
+When you gain life for the first time each turn, return Deathless Knight from your graveyard to your hand.",4.0,Deathless Knight,['Haste'],2,4,Creature — Skeleton Knight,{B/G}{B/G}{B/G}{B/G},uncommon,"['B', 'G']","['B', 'G']",12860
+"{T}: Prevent the next 1 damage that would be dealt to any target this turn.
+{T}: Prevent the next 2 damage that would be dealt to target artifact creature this turn.",2.0,Abuna Acolyte,[],1,1,Creature — Cat Cleric,{1}{W},uncommon,['W'],['W'],15558
+"Undying (When this creature dies, if it had no +1/+1 counters on it, return it to the battlefield under its owner's control with a +1/+1 counter on it.)",2.0,Butcher Ghoul,['Undying'],1,1,Creature — Zombie,{1}{B},common,['B'],['B'],3771
+"When Gravedigger enters the battlefield, you may return target creature card from your graveyard to your hand.",4.0,Gravedigger,[],2,2,Creature — Zombie,{3}{B},common,['B'],['B'],2568
+"Unbreathing Horde enters the battlefield with a +1/+1 counter on it for each other Zombie you control and each Zombie card in your graveyard.
+If Unbreathing Horde would be dealt damage, prevent that damage and remove a +1/+1 counter from it.",3.0,Unbreathing Horde,[],0,0,Creature — Zombie,{2}{B},rare,['B'],['B'],3029
+"{2}, {T}, Sacrifice Armillary Sphere: Search your library for up to two basic land cards, reveal them, put them into your hand, then shuffle your library.",2.0,Armillary Sphere,[],,,Artifact,{2},common,[],[],1070
+You may have Clone enter the battlefield as a copy of any creature on the battlefield.,4.0,Clone,[],0,0,Creature — Shapeshifter,{3}{U},rare,['U'],['U'],1567
+"Tranquil Cove enters the battlefield tapped.
+When Tranquil Cove enters the battlefield, you gain 1 life.
+{T}: Add {W} or {U}.",0.0,Tranquil Cove,[],,,Land,,common,[],"['U', 'W']",322
+"Create five 1/1 white Human creature tokens. If this spell was cast from a graveyard, create ten of those tokens instead.
+Flashback {7}{W}{W} (You may cast this card from your graveyard for its flashback cost. Then exile it.)",5.0,Increasing Devotion,['Flashback'],,,Sorcery,{3}{W}{W},rare,['W'],['W'],1949
+"{1}, {T}, Sacrifice another creature: You gain life equal to that creature's toughness. Draw a card.",4.0,Bushmeat Poacher,[],4,2,Creature — Human Soldier,{3}{B},common,['B'],['B'],15164
+,3.0,Gloom Pangolin,[],5,1,Creature — Nightmare Pangolin,{2}{B},common,['B'],['B'],18889
+"Equipped creature has first strike.
+As long as equipped creature is a Human, it gets +1/+1.
+Equip {1}",2.0,Sharpened Pitchfork,['Equip'],,,Artifact — Equipment,{2},uncommon,[],[],11355
+"Flying
+As long as Wonder is in your graveyard and you control an Island, creatures you control have flying.",4.0,Wonder,['Flying'],2,2,Creature — Incarnation,{3}{U},uncommon,['U'],['U'],1243
+"Enchant creature
+Enchanted creature gets +2/+2 as long as it's a Human. Otherwise, it can't attack or block.",2.0,Bonds of Faith,['Enchant'],,,Enchantment — Aura,{1}{W},common,['W'],['W'],8682
+Destroy target tapped creature. You gain 1 life for each creature you control with flying.,3.0,Aerial Assault,[],,,Sorcery,{2}{W},common,['W'],['W'],10177
+{R}: Disciple of the Old Ways gains first strike until end of turn.,2.0,Disciple of the Old Ways,[],2,2,Creature — Human Warrior,{1}{G},common,['G'],"['G', 'R']",16215
+"Whenever a creature dies, if an Aura you control was attached to it, return target creature card with converted mana cost 2 or less from your graveyard to your hand.",3.0,Dawn Evangel,[],3,2,Enchantment Creature — Human Cleric,{2}{W},uncommon,['W'],['W'],13648
+Temple Thief can't be blocked by enchanted creatures or enchantment creatures.,2.0,Temple Thief,[],2,2,Creature — Human Rogue,{1}{B},common,['B'],['B'],19353
+"Extort (Whenever you cast a spell, you may pay {W/B}. If you do, each opponent loses 1 life and you gain that much life.)
+Artifacts and creatures your opponents control enter the battlefield tapped.",2.0,Blind Obedience,['Extort'],,,Enchantment,{1}{W},rare,['W'],['W'],263
+"As an additional cost to cast this spell, exile a creature card from your graveyard.
+Undying (When this creature dies, if it had no +1/+1 counters on it, return it to the battlefield under its owner's control with a +1/+1 counter on it.)",5.0,Relentless Skaabs,['Undying'],4,4,Creature — Zombie,{3}{U}{U},uncommon,['U'],['U'],14264
+"Equipped creature gets +3/+0.
+As long as equipped creature is a Human, it has lifelink.
+Equip {3}",3.0,Butcher's Cleaver,['Equip'],,,Artifact — Equipment,{3},uncommon,[],[],8497
+Destroy target artifact or enchantment.,2.0,Disenchant,[],,,Instant,{1}{W},common,['W'],['W'],875
+"Proliferate. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)
+Draw a card.",2.0,Contentious Plan,['Proliferate'],,,Sorcery,{1}{U},common,['U'],['U'],2485
+"When Corridor Monitor enters the battlefield, untap target artifact or creature you control.",2.0,Corridor Monitor,[],4,1,Artifact Creature — Construct,{1}{U},common,['U'],['U'],5200
+,6.0,Tuinvale Treefolk // Oaken Boon,[],5,6,Creature — Treefolk Druid // Sorcery — Adventure,{5}{G} // {3}{G},common,['G'],['G'],11286
+"Bestow {3}{B}{B} (If you cast this card for its bestow cost, it's an Aura spell with enchant creature. It becomes a creature again if it's not attached to a creature.)
+Flying
+At the beginning of your upkeep, you lose 1 life.
+Enchanted creature gets +3/+3 and has flying.",3.0,Herald of Torment,"['Flying', 'Bestow']",3,3,Enchantment Creature — Demon,{1}{B}{B},rare,['B'],['B'],7979
+"Flying
+Whenever you cast an instant or sorcery spell that targets a creature you control, exile that card instead of putting it into your graveyard as it resolves. If you do, return it to your hand at the beginning of the next end step.",3.0,"Feather, the Redeemed",['Flying'],4,3,Legendary Creature — Angel,{R}{W}{W},rare,"['R', 'W']","['R', 'W']",2128
+"You draw two cards, lose 2 life, and put the top two cards of your library into your graveyard.",3.0,Funeral Rites,[],,,Sorcery,{2}{B},common,['B'],['B'],7514
+"Mutate {1}{R/W}{R/W} (If you cast this spell for its mutate cost, put it over or under target non-Human creature you own. They mutate into the creature on top plus all abilities from under it.)
+Whenever this creature mutates, other creatures you control get +2/+1 until end of turn.",2.0,Regal Leosaur,['Mutate'],2,2,Creature — Dinosaur Cat,{R}{W},uncommon,"['R', 'W']","['R', 'W']",11017
+"Counter target creature spell.
+Draw a card.",4.0,Bone to Ash,[],,,Instant,{2}{U}{U},common,['U'],['U'],6291
+"Riot (This creature enters the battlefield with your choice of a +1/+1 counter or haste.)
+Trample
+{4}{R}{G}: Frenzied Arynx gets +3/+0 until end of turn.",4.0,Frenzied Arynx,"['Trample', 'Riot']",3,3,Creature — Cat Beast,{2}{R}{G},common,"['G', 'R']","['G', 'R']",11636
+"Exile target creature you control, then return it to the battlefield under its owner's control.
+Flashback {3}{U} (You may cast this card from your graveyard for its flashback cost. Then exile it.)",2.0,Momentary Blink,['Flashback'],,,Instant,{1}{W},common,['W'],"['U', 'W']",2408
+Double strike,3.0,Raging Redcap,['Double strike'],2,1,Creature — Goblin Knight,{2}{R},common,['R'],['R'],11595
+"Constellation — Whenever an enchantment enters the battlefield under your control, target creature gets +1/+1 until end of turn.",1.0,Pious Wayfarer,['Constellation'],2,1,Creature — Human Scout,{W},common,['W'],['W'],15049
+Attacking non-Human creatures you control get +1/+0 and have trample.,3.0,Ferocity of the Wilds,[],,,Enchantment,{2}{R},uncommon,['R'],['R'],6773
+"Target creature you control gains protection from the color of your choice until end of turn. (It can't be blocked, targeted, dealt damage, enchanted, or equipped by anything of that color.)
+Scry 1. (Look at the top card of your library. You may put that card on the bottom of your library.)",1.0,Gods Willing,['Scry'],,,Instant,{W},common,['W'],['W'],1744
+,1.0,Yoked Ox,[],4,0,Creature — Ox,{W},common,['W'],['W'],12308
+"Whenever you draw your second card each turn, Bloodhaze Wolverine gets +1/+1 and gains first strike until end of turn.",2.0,Bloodhaze Wolverine,[],1,2,Creature — Wolverine,{1}{R},common,['R'],['R'],17720
+Exile target creature.,5.0,Final Death,[],,,Instant,{4}{B},common,['B'],['B'],12372
+You gain twice X life. Put Sanguine Sacrament on the bottom of its owner's library.,2.0,Sanguine Sacrament,[],,,Instant,{X}{W}{W},rare,['W'],['W'],4986
+"Flash
+Flying
+When Threnody Singer enters the battlefield, target creature an opponent controls gets -X/-0 until end of turn, where X is your devotion to blue. (Each {U} in the mana costs of permanents you control counts towards your devotion to blue.)",2.0,Threnody Singer,"['Flying', 'Flash']",3,1,Creature — Siren,{1}{U},uncommon,['U'],['U'],16091
+"Flying
+Spells your opponents cast that target Boreal Elemental cost {2} more to cast.",5.0,Boreal Elemental,['Flying'],4,3,Creature — Elemental,{4}{U},common,['U'],['U'],13949
+"As long as your life total is greater than or equal to your starting life total, creatures you control get +1/+1.
+Whenever one or more creatures you control attack, you gain life equal to the number of attacking creatures.",3.0,Path of Bravery,[],,,Enchantment,{2}{W},rare,['W'],['W'],5368
+"Flash
+Enchant creature
+Enchanted creature gets +1/+2.",2.0,Indomitable Will,"['Enchant', 'Flash']",,,Enchantment — Aura,{1}{W},common,['W'],['W'],11796
+"When Undercity Scavenger enters the battlefield, you may sacrifice another creature. If you do, put two +1/+1 counters on Undercity Scavenger, then scry 2.",4.0,Undercity Scavenger,['Scry'],3,3,Creature — Ogre Warrior,{3}{B},common,['B'],['B'],14153
+"Flying
+{1}{W}: Sunmane Pegasus gains vigilance and lifelink until end of turn.",4.0,Sunmane Pegasus,['Flying'],3,2,Creature — Pegasus,{3}{W},common,['W'],['W'],16730
+"Whenever you cast a creature spell that has an Adventure, draw a card. (It doesn't need to have gone on the adventure first.)",1.0,Edgewall Innkeeper,[],1,1,Creature — Human Peasant,{G},uncommon,['G'],['G'],13901
+"Scoured Barrens enters the battlefield tapped.
+When Scoured Barrens enters the battlefield, you gain 1 life.
+{T}: Add {W} or {B}.",0.0,Scoured Barrens,[],,,Land,,common,[],"['B', 'W']",250
+,3.0,Nyxborn Courser,[],4,2,Enchantment Creature — Centaur Scout,{1}{W}{W},common,['W'],['W'],17364
+Exile target creature with power 3 or less.,3.0,Reaver Ambush,[],,,Instant,{2}{B},uncommon,['B'],['B'],15210
+"Flying
+When Scavenging Harpy enters the battlefield, exile target card from an opponent's graveyard.",3.0,Scavenging Harpy,['Flying'],1,2,Creature — Harpy,{2}{B},common,['B'],['B'],18115
+Target opponent reveals their hand. You choose a nonland card from it. That player discards that card. You may put a card that has an Adventure that player owns from exile into that player's graveyard.,3.0,Memory Theft,[],,,Sorcery,{2}{B},common,['B'],['B'],15969
+"When Doomed Traveler dies, create a 1/1 white Spirit creature token with flying.",1.0,Doomed Traveler,[],1,1,Creature — Human Soldier,{W},common,['W'],['W'],3154
+"Whenever Undead Augur or another Zombie you control dies, you draw a card and you lose 1 life.",2.0,Undead Augur,[],2,2,Creature — Zombie Wizard,{B}{B},uncommon,['B'],['B'],3213
+"Underworld Charger can't block.
+Escape—{4}{B}, Exile three other cards from your graveyard. (You may cast this card from your graveyard for its escape cost.)
+Underworld Charger escapes with two +1/+1 counters on it.",3.0,Underworld Charger,['Escape'],3,3,Creature — Nightmare Horse,{2}{B},common,['B'],['B'],16992
+"You may sacrifice two Foods. If you do, create a 7/7 green Giant creature token. Otherwise, create three Food tokens. (They're artifacts with ""{2}, {T}, Sacrifice this artifact: You gain 3 life."")",3.0,Giant Opportunity,[],,,Sorcery,{2}{G},uncommon,['G'],['G'],11653
+"Whenever a creature you control dies, you gain 1 life and draw a card.",5.0,Moldervine Reclamation,[],,,Enchantment,{3}{B}{G},uncommon,"['B', 'G']","['B', 'G']",1355
+"First strike
+Whenever a creature dealt damage by Abattoir Ghoul this turn dies, you gain life equal to that creature's toughness.",4.0,Abattoir Ghoul,['First strike'],2,3,Creature — Zombie,{3}{B},uncommon,['B'],['B'],10948
+"Flying
+Extort (Whenever you cast a spell, you may pay {W/B}. If you do, each opponent loses 1 life and you gain that much life.)",3.0,Kingpin's Pet,"['Flying', 'Extort']",2,2,Creature — Thrull,{1}{W}{B},common,"['B', 'W']","['B', 'W']",7133
+"{3}, {T}, Sacrifice Scalding Cauldron: It deals 3 damage to target creature.",1.0,Scalding Cauldron,[],,,Artifact,{1},common,[],[],14743
+"Weapon Rack enters the battlefield with three +1/+1 counters on it.
+{T}: Move a +1/+1 counter from Weapon Rack onto target creature. Activate this ability only any time you could cast a sorcery.",4.0,Weapon Rack,[],,,Artifact,{4},common,[],[],11492
+"Evolve (Whenever a creature enters the battlefield under your control, if that creature has greater power or toughness than this creature, put a +1/+1 counter on this creature.)
+{1}{U}, {T}: Move a +1/+1 counter from Simic Fluxmage onto target creature.",3.0,Simic Fluxmage,[],2,1,Creature — Merfolk Wizard,{2}{U},uncommon,['U'],['U'],8745
+"Equipped creature has flying.
+Equip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)",2.0,Cobbled Wings,['Equip'],,,Artifact — Equipment,{2},common,[],[],5191
+"Flying (This creature can't be blocked except by creatures with flying or reach.)
+Scrapskin Drake can block only creatures with flying.",3.0,Scrapskin Drake,['Flying'],3,2,Creature — Zombie Drake,{2}{U},common,['U'],['U'],14744
+Gain control of target creature with converted mana cost 3 or less until end of turn. Untap that creature. It gains haste until end of turn.,1.0,Claim the Firstborn,[],,,Sorcery,{R},uncommon,['R'],['R'],9007
+{T}: Exile target creature card from a graveyard.,2.0,Thraben Heretic,[],2,2,Creature — Human Wizard,{1}{W},uncommon,['W'],['W'],13936
+"Flash
+Flying
+When Spire Mangler enters the battlefield, target creature with flying you control gets +2/+0 until end of turn.",3.0,Spire Mangler,"['Flying', 'Flash']",1,2,Creature — Insect,{2}{B},uncommon,['B'],['B'],17977
+"Flying
+When Tower Geist enters the battlefield, look at the top two cards of your library. Put one of them into your hand and the other into your graveyard.",4.0,Tower Geist,['Flying'],2,2,Creature — Spirit,{3}{U},uncommon,['U'],['U'],12536
+"Flying
+Haste (This creature can attack and {T} as soon as it comes under your control.)",2.0,Lightning Stormkin,"['Flying', 'Haste']",2,2,Creature — Elemental Wizard,{U}{R},uncommon,"['R', 'U']","['R', 'U']",9145
+"Trample (This creature can deal excess combat damage to the player or planeswalker it's attacking.)
+Other Elementals you control have trample.",4.0,Thicket Crasher,['Trample'],3,4,Creature — Elemental Rhino,{3}{G},common,['G'],['G'],5583
+"Whenever another creature enters the battlefield under your control, you gain 1 life.",2.0,Impassioned Orator,[],2,2,Creature — Human Cleric,{1}{W},common,['W'],['W'],4868
+"Temple of Epiphany enters the battlefield tapped.
+When Temple of Epiphany enters the battlefield, scry 1.
+{T}: Add {U} or {R}.",0.0,Temple of Epiphany,['Scry'],,,Land,,rare,[],"['R', 'U']",235
+Diregraf Ghoul enters the battlefield tapped.,1.0,Diregraf Ghoul,[],2,2,Creature — Zombie,{B},uncommon,['B'],['B'],8001
+,1.0,Giant Killer // Chop Down,[],2,1,Creature — Human Peasant // Instant — Adventure,{W} // {2}{W},rare,['W'],['W'],6620
+"Bloodrush — {R}, Discard Skinbrand Goblin: Target attacking creature gets +2/+1 until end of turn.",2.0,Skinbrand Goblin,['Bloodrush'],1,2,Creature — Goblin Warrior,{1}{R},common,['R'],['R'],12664
+"Escape—{5}{B}, Exile three other cards from your graveyard. (You may cast this card from your graveyard for its escape cost.)
+Pharika's Spawn escapes with two +1/+1 counters on it. When it enters the battlefield this way, each opponent sacrifices a non-Gorgon creature.",4.0,Pharika's Spawn,['Escape'],4,3,Creature — Gorgon,{3}{B},uncommon,['B'],['B'],13003
+Return target creature or enchantment an opponent controls to its owner's hand.,1.0,Stern Dismissal,[],,,Instant,{U},common,['U'],['U'],10823
+"Flash
+When Omen of the Sun enters the battlefield, create two 1/1 white Human Soldier creature tokens and you gain 2 life.
+{2}{W}, Sacrifice Omen of the Sun: Scry 2.",3.0,Omen of the Sun,"['Flash', 'Scry']",,,Enchantment,{2}{W},common,['W'],['W'],8315
+Flying,4.0,Assault Griffin,['Flying'],2,3,Creature — Griffin,{3}{W},common,['W'],['W'],13947
+"Enchant creature
+Enchanted creature gets -3/-3.",2.0,Mire's Grasp,['Enchant'],,,Enchantment — Aura,{1}{B},common,['B'],['B'],13328
+,4.0,Nyxborn Marauder,[],3,4,Enchantment Creature — Minotaur,{2}{B}{B},common,['B'],['B'],18235
+"When Driver of the Dead dies, return target creature card with converted mana cost 2 or less from your graveyard to the battlefield.",4.0,Driver of the Dead,[],2,3,Creature — Vampire,{3}{B},common,['B'],['B'],9558
+"When Keensight Mentor enters the battlefield, put a vigilance counter on target non-Human creature you control.
+{1}{W}, {T}: Put a +1/+1 counter on each creature you control with vigilance.",3.0,Keensight Mentor,[],4,1,Creature — Human Cleric,{2}{W},uncommon,['W'],['W'],14033
+"Skip your draw step.
+At the beginning of your upkeep, look at the top three cards of your library. Put one of them into your hand and the rest into your graveyard.
+{B}, {T}, Exile X cards from your graveyard: Target creature gets -X/-X until end of turn.",5.0,"Taigam, Sidisi's Hand",[],4,3,Legendary Creature — Human Wizard,{3}{U}{B},rare,"['B', 'U']","['B', 'U']",3026
+"Target creature gets -4/-0 until end of turn.
+Draw a card.",3.0,Befuddle,[],,,Instant,{2}{U},common,['U'],['U'],12787
+"Adamant — When Clockwork Servant enters the battlefield, if at least three mana of the same color was spent to cast it, draw a card.",3.0,Clockwork Servant,['Adamant'],3,2,Artifact Creature — Gnome,{3},uncommon,[],[],12119
+"When Discordant Piper dies, create a 0/1 white Goat creature token.",2.0,Discordant Piper,[],1,2,Creature — Zombie Satyr,{1}{B},common,['B'],['B'],11934
+"{1}{W}{B}: Target creature gains lifelink until end of turn.
+{1}{W}{B}: Whenever you gain life this turn, each opponent loses that much life.",2.0,Vizkopa Guildmage,[],2,2,Creature — Human Wizard,{W}{B},uncommon,"['B', 'W']","['B', 'W']",1437
+"Enchant creature
+Heliod's Punishment enters the battlefield with four task counters on it.
+Enchanted creature can't attack or block. It loses all abilities and has ""{T}: Remove a task counter from Heliod's Punishment. Then if it has no task counters on it, destroy Heliod's Punishment.""",2.0,Heliod's Punishment,['Enchant'],,,Enchantment — Aura,{1}{W},uncommon,['W'],['W'],10129
+"When Elite Instructor enters the battlefield, draw a card, then discard a card.",3.0,Elite Instructor,[],2,2,Creature — Human Wizard,{2}{U},common,['U'],['U'],14647
+"Deathtouch
+Other Zombie creatures you control get +1/+1.
+Whenever another Zombie you control dies, target opponent loses 1 life.",3.0,Diregraf Captain,['Deathtouch'],2,2,Creature — Zombie Soldier,{1}{U}{B},uncommon,"['B', 'U']","['B', 'U']",1385
+"({T}: Add {R}.)
+Dwarven Mine enters the battlefield tapped unless you control three or more other Mountains.
+When Dwarven Mine enters the battlefield untapped, create a 1/1 red Dwarf creature token.",0.0,Dwarven Mine,[],,,Land — Mountain,,common,[],['R'],3731
+Target creature you control gets +2/+1 until end of turn. Each other creature you control gets +1/+1 until end of turn.,2.0,Phalanx Tactics,[],,,Instant,{1}{W},uncommon,['W'],['W'],10054
+"Flying
+When Goldnight Redeemer enters the battlefield, you gain 2 life for each other creature you control.",6.0,Goldnight Redeemer,['Flying'],4,4,Creature — Angel,{4}{W}{W},uncommon,['W'],['W'],9298
+"Exile target artifact or enchantment.
+Draw a card.",4.0,True Love's Kiss,[],,,Instant,{2}{W}{W},common,['W'],['W'],7757
+"Draw three cards.
+Adamant — If at least three blue mana was spent to cast this spell, scry 3.",5.0,Unexplained Vision,"['Adamant', 'Scry']",,,Sorcery,{4}{U},common,['U'],['U'],10031
+"Enchant creature
+Enchanted creature gets +1/+1 for each artifact and/or enchantment you control.",2.0,All That Glitters,['Enchant'],,,Enchantment — Aura,{1}{W},uncommon,['W'],['W'],1806
+,2.0,Gutter Skulk,[],2,2,Creature — Zombie Rat,{1}{B},common,['B'],['B'],13269
+Target creature you control gets +0/+3 and gains hexproof until end of turn. (It can't be the target of spells or abilities your opponents control.),1.0,Dive Down,[],,,Instant,{U},common,['U'],['U'],5926
+"{3}, {T}: Retributive Wand deals 1 damage to any target.
+When Retributive Wand is put into a graveyard from the battlefield, it deals 5 damage to any target.",3.0,Retributive Wand,[],,,Artifact,{3},uncommon,[],[],11887
+"Destroy target artifact or enchantment.
+Cycling {2} ({2}, Discard this card: Draw a card.)",2.0,Wilt,['Cycling'],,,Instant,{1}{G},common,['G'],['G'],10160
+"Whenever Redcap Raiders attacks, you may tap an untapped non-Human creature you control. If you do, Redcap Raiders gets +1/+1 and gains trample until end of turn.",3.0,Redcap Raiders,[],2,3,Creature — Goblin Warrior,{2}{R},common,['R'],['R'],14142
+,2.0,Smitten Swordmaster // Curry Favor,['Lifelink'],1,2,Creature — Human Knight // Sorcery — Adventure,{1}{B} // {B},common,['B'],['B'],5074
+"Put a +1/+1 counter on each creature you control.
+Adamant — If at least three white mana was spent to cast this spell, creatures you control gain vigilance until end of turn.",4.0,Silverflame Ritual,['Adamant'],,,Sorcery,{3}{W},common,['W'],['W'],10624
+"(As this Saga enters and after your draw step, add a lore counter. Sacrifice after IV.)
+I — Scry 2.
+II — Choose a card name.
+III — When you cast a spell with the chosen card name for the first time this turn, draw two cards.
+IV — Look at the top card of each player's library.",2.0,Medomai's Prophecy,['Scry'],,,Enchantment — Saga,{1}{U},uncommon,['U'],['U'],8006
+Ivy Elemental enters the battlefield with X +1/+1 counters on it.,1.0,Ivy Elemental,[],0,0,Creature — Elemental,{X}{G},uncommon,['G'],['G'],8034
+"Enchant creature
+When Angelic Gift enters the battlefield, draw a card.
+Enchanted creature has flying.",2.0,Angelic Gift,['Enchant'],,,Enchantment — Aura,{1}{W},common,['W'],['W'],5260
+"Look at the top four cards of your library. Put one of them into your hand and the rest into your graveyard.
+Flashback {6}{B} (You may cast this card from your graveyard for its flashback cost. Then exile it.)",3.0,Forbidden Alchemy,['Flashback'],,,Instant,{2}{U},common,['U'],"['B', 'U']",2153
+"Other Zombies you control get +1/+1.
+{1}{B}, {T}: All Zombies gain menace until end of turn.",3.0,Lord of the Accursed,[],3,2,Creature — Zombie,{2}{B},uncommon,['B'],['B'],1373
+"Flying
+Landfall — Whenever a land enters the battlefield under your control, you may create a 1/1 white Bird creature token with flying.",4.0,Emeria Angel,"['Landfall', 'Flying']",3,3,Creature — Angel,{2}{W}{W},rare,['W'],['W'],2104
+Tap an untapped Gate you control: Crackling Perimeter deals 1 damage to each opponent.,2.0,Crackling Perimeter,[],,,Enchantment,{1}{R},uncommon,['R'],['R'],9101
+"When Gray Merchant of Asphodel enters the battlefield, each opponent loses X life, where X is your devotion to black. You gain life equal to the life lost this way. (Each {B} in the mana costs of permanents you control counts toward your devotion to black.)",5.0,Gray Merchant of Asphodel,[],4,2,Creature — Zombie,{3}{B}{B},uncommon,['B'],['B'],170
+"Deathtouch
+When Venomous Hierophant enters the battlefield, put the top three cards of your library into your graveyard.",4.0,Venomous Hierophant,['Deathtouch'],3,3,Creature — Gorgon Cleric,{3}{B},common,['B'],['B'],12889
+"Adamant — If at least three mana of the same color was spent to cast this spell, Henge Walker enters the battlefield with a +1/+1 counter on it.",3.0,Henge Walker,['Adamant'],2,2,Artifact Creature — Golem,{3},common,[],[],15280
+"As an additional cost to cast this spell, exile a creature card from your graveyard.",4.0,Makeshift Mauler,[],5,4,Creature — Zombie Horror,{3}{U},common,['U'],['U'],17203
+First strike,2.0,Youthful Knight,['First strike'],1,2,Creature — Human Knight,{1}{W},common,['W'],['W'],11023
+Target player gains 2 life for each creature on the battlefield.,4.0,Congregate,[],,,Instant,{3}{W},uncommon,['W'],['W'],4883
+"(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)
+I — Destroy target creature an opponent controls with power 2 or less.
+II — Target opponent reveals their hand. You choose a noncreature, nonland card from it. That player discards that card.
+III — Exile target opponent's graveyard.",3.0,Elspeth's Nightmare,[],,,Enchantment — Saga,{2}{B},uncommon,['B'],['B'],9221
+"Flying
+{3}{U}: Scry 1.",5.0,Witness of Tomorrows,"['Scry', 'Flying']",4,3,Enchantment Creature — Sphinx,{4}{U},common,['U'],['U'],14632
+"When Glass Casket enters the battlefield, exile target creature an opponent controls with converted mana cost 3 or less until Glass Casket leaves the battlefield.",2.0,Glass Casket,[],,,Artifact,{1}{W},uncommon,['W'],['W'],11295
+"Creatures you control get +0/+1.
+When Fortifying Provisions enters the battlefield, create a Food token. (It's an artifact with ""{2}, {T}, Sacrifice this artifact: You gain 3 life."")",3.0,Fortifying Provisions,[],,,Enchantment,{2}{W},common,['W'],['W'],12094
+"As an additional cost to cast this spell, exile a creature card from your graveyard.
+Flying",3.0,Stitched Drake,['Flying'],4,3,Creature — Zombie Drake,{1}{U}{U},common,['U'],['U'],14149
+Return up to three target creatures and/or enchantments to their owners' hands.,6.0,Sea God's Scorn,[],,,Sorcery,{4}{U}{U},uncommon,['U'],['U'],14909
+"Flying
+Lifelink (Damage dealt by this creature also causes you to gain that much life.)",4.0,Seraph of Dawn,"['Flying', 'Lifelink']",4,2,Creature — Angel,{2}{W}{W},common,['W'],['W'],10206
+Target opponent sacrifices a creature. You gain life equal to that creature's toughness.,3.0,Tribute to Hunger,[],,,Instant,{2}{B},uncommon,['B'],['B'],7071
+"Enchant creature
+Enchanted creature loses all abilities and is a blue Fish with base power and toughness 0/1.",3.0,Ichthyomorphosis,['Enchant'],,,Enchantment — Aura,{2}{U},common,['U'],['U'],8294
+"Target player loses 2 life.
+Escape—{3}{B}, Exile three other cards from your graveyard. (You may cast this card from your graveyard for its escape cost.)",1.0,Fruit of Tizerus,['Escape'],,,Sorcery,{B},common,['B'],['B'],17608
+"Vigilance (Attacking doesn't cause this creature to tap.)
+As Diamond Knight enters the battlefield, choose a color.
+Whenever you cast a spell of the chosen color, put a +1/+1 counter on Diamond Knight.",3.0,Diamond Knight,['Vigilance'],1,1,Artifact Creature — Knight,{3},uncommon,[],[],9353
+,7.0,Reaper of Night // Harvest Fear,[],5,4,Creature — Specter // Sorcery — Adventure,{5}{B}{B} // {3}{B},common,['B'],['B'],12101
+"When Enchanted Carriage enters the battlefield, create two 1/1 white Mouse creature tokens.
+Crew 2 (Tap any number of creatures you control with total power 2 or more: This Vehicle becomes an artifact creature until end of turn.)",5.0,Enchanted Carriage,['Crew'],4,4,Artifact — Vehicle,{5},uncommon,[],[],9432
+"For each spell and ability your opponents control, counter it unless its controller pays {4}.",3.0,Whirlwind Denial,[],,,Instant,{2}{U},uncommon,['U'],['U'],4788
+"When Moonlit Scavengers enters the battlefield, if you control an artifact or enchantment, return target creature an opponent controls to its owner's hand.",6.0,Moonlit Scavengers,[],5,4,Creature — Merfolk Rogue,{5}{U},common,['U'],['U'],16568
+"Blossoming Sands enters the battlefield tapped.
+When Blossoming Sands enters the battlefield, you gain 1 life.
+{T}: Add {G} or {W}.",0.0,Blossoming Sands,[],,,Land,,common,[],"['G', 'W']",401
+"Enchant creature without flying
+Enchanted creature can't attack or block, and its activated abilities can't be activated.",2.0,Trapped in the Tower,['Enchant'],,,Enchantment — Aura,{1}{W},common,['W'],['W'],9530
+"Daxos's toughness is equal to your devotion to white. (Each {W} in the mana costs of permanents you control counts toward your devotion to white.)
+Whenever another creature you control enters the battlefield or dies, you gain 1 life.",2.0,"Daxos, Blessed by the Sun",[],*,2,Legendary Enchantment Creature — Demigod,{W}{W},uncommon,['W'],['W'],3196
+"Flying, vigilance",1.0,Segovian Angel,"['Flying', 'Vigilance']",1,1,Creature — Angel,{W},common,['W'],['W'],5977
+"Flying
+At the beginning of each combat, choose first strike, vigilance, or lifelink. Creatures you control gain that ability until end of turn.",6.0,Angelic Skirmisher,"['Flying', 'Vigilance']",4,4,Creature — Angel,{4}{W}{W},rare,['W'],['W'],2138
+{2}: Add one mana of any color.,2.0,Prismite,[],1,2,Artifact Creature — Golem,{2},common,[],[],8168
+"Flying
+If you would gain life, you gain that much life plus 1 instead.
+Angel of Vitality gets +2/+2 as long as you have 25 or more life.",3.0,Angel of Vitality,['Flying'],2,2,Creature — Angel,{2}{W},uncommon,['W'],['W'],3651
+"When Fiend Hunter enters the battlefield, you may exile another target creature.
+When Fiend Hunter leaves the battlefield, return the exiled card to the battlefield under its owner's control.",3.0,Fiend Hunter,[],3,1,Creature — Human Cleric,{1}{W}{W},uncommon,['W'],['W'],1060
+"Tap up to two target creatures. Those creatures don't untap during their controller's next untap step.
+Cycling {1} ({1}, Discard this card: Draw a card.)",5.0,Frostveil Ambush,['Cycling'],,,Instant,{3}{U}{U},common,['U'],['U'],14298
+"(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)
+I — Search your library for a basic Plains card, reveal it, put it into your hand, then shuffle your library.
+II — Create a 0/4 colorless Wall artifact creature token with defender.
+III — You gain 2 life.",2.0,The Birth of Meletis,[],,,Enchantment — Saga,{1}{W},uncommon,['W'],['W'],6392
+"When Eternal Skylord enters the battlefield, amass 2. (Put two +1/+1 counters on an Army you control. If you don't control one, create a 0/0 black Zombie Army creature token first.)
+Zombie tokens you control have flying.",5.0,Eternal Skylord,['Amass'],3,3,Creature — Zombie Wizard,{4}{U},uncommon,['U'],['U'],4297
+"Flying
+Enemy of Enlightenment gets -1/-1 for each card in your opponents' hands.
+At the beginning of your upkeep, each player discards a card.",6.0,Enemy of Enlightenment,['Flying'],5,5,Enchantment Creature — Demon,{5}{B},uncommon,['B'],['B'],15843
+"Choose one or both —
+• Counter target creature spell.
+• Return target creature card from your graveyard to your hand.",3.0,Soul Manipulation,[],,,Instant,{1}{U}{B},uncommon,"['B', 'U']","['B', 'U']",3344
+"{3}{U}, {T}: Exile another target creature you control, then return that card to the battlefield under your control.",1.0,Nephalia Smuggler,[],1,1,Creature — Human Rogue,{U},uncommon,['U'],['U'],5569
+Lifelink (Damage dealt by this creature also causes you to gain that much life.),2.0,Daybreak Chaplain,['Lifelink'],3,1,Creature — Human Cleric,{1}{W},common,['W'],['W'],13017
+Target creature gets +3/+2 until end of turn.,1.0,Infuriate,[],,,Instant,{R},common,['R'],['R'],5852
+"When Frost Lynx enters the battlefield, tap target creature an opponent controls. That creature doesn't untap during its controller's next untap step.",3.0,Frost Lynx,[],2,2,Creature — Elemental Cat,{2}{U},common,['U'],['U'],8609
+{2}{B}: Return Sanitarium Skeleton from your graveyard to your hand.,1.0,Sanitarium Skeleton,[],2,1,Creature — Skeleton,{B},common,['B'],['B'],5095
+"Destroy target non-Vampire, non-Werewolf, non-Zombie creature.",2.0,Victim of Night,[],,,Instant,{B}{B},common,['B'],['B'],2693
+Target creature you control deals damage equal to its power to target creature you don't control.,2.0,Rabid Bite,[],,,Sorcery,{1}{G},common,['G'],['G'],4276
+"{2}, {T}, Sacrifice Vial of Dragonfire: It deals 2 damage to target creature.",2.0,Vial of Dragonfire,[],,,Artifact,{2},common,[],[],14276
+"Gravecrawler can't block.
+You may cast Gravecrawler from your graveyard as long as you control a Zombie.",1.0,Gravecrawler,[],1,2,Creature — Zombie,{B},rare,['B'],['B'],1184
+"Enchant creature or enchantment
+Enchanted permanent is an enchantment and loses all other card types. (It still has its abilities, but it's no longer a creature.)",4.0,One with the Stars,['Enchant'],,,Enchantment — Aura,{3}{U},uncommon,['U'],['U'],10753
+"Enchant land
+Enchanted land has ""{T}, Pay 1 life: Draw a card.""",3.0,Underworld Connections,['Enchant'],,,Enchantment — Aura,{1}{B}{B},rare,['B'],['B'],732
+"When Ancestral Blade enters the battlefield, create a 1/1 white Soldier creature token, then attach Ancestral Blade to it.
+Equipped creature gets +1/+1.
+Equip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)",2.0,Ancestral Blade,['Equip'],,,Artifact — Equipment,{1}{W},uncommon,['W'],['W'],7884
+"Draw a card.
+Cipher (Then you may exile this spell card encoded on a creature you control. Whenever that creature deals combat damage to a player, its controller may cast a copy of the encoded card without paying its mana cost.)",4.0,Last Thoughts,['Cipher'],,,Sorcery,{3}{U},common,['U'],['U'],8621
+Counter target noncreature spell.,2.0,Negate,[],,,Instant,{1}{U},common,['U'],['U'],56
+"Whenever this creature mutates, put a +1/+1 counter on it.",1.0,Mysterious Egg,[],2,0,Creature — Egg,{1},common,[],[],9408
+"Exile target creature and all other creatures with the same name as that creature.
+Flashback {5}{B}{B} (You may cast this card from your graveyard for its flashback cost. Then exile it.)",4.0,Sever the Bloodline,['Flashback'],,,Sorcery,{3}{B},rare,['B'],['B'],5633
+"Draw three cards, untap up to two lands, then discard a card.",5.0,Pore Over the Pages,[],,,Sorcery,{3}{U}{U},uncommon,['U'],['U'],6259
+"Flying
+As long as Dearly Departed is in your graveyard, each Human creature you control enters the battlefield with an additional +1/+1 counter on it.",6.0,Dearly Departed,['Flying'],5,5,Creature — Spirit,{4}{W}{W},rare,['W'],['W'],9673
+"Fire Prophecy deals 3 damage to target creature. You may put a card from your hand on the bottom of your library. If you do, draw a card.",2.0,Fire Prophecy,[],,,Instant,{1}{R},common,['R'],['R'],12942
+"Equipped creature gets +2/+0.
+Equip {3} ({3}: Attach to target creature you control. Equip only as a sorcery.)",1.0,Bronze Sword,['Equip'],,,Artifact — Equipment,{1},common,[],[],12675
+"If an opponent would gain life, that player loses that much life instead.",3.0,Tainted Remedy,[],,,Enchantment,{2}{B},rare,['B'],['B'],2777
+"Flash
+When Omen of the Dead enters the battlefield, return target creature card from your graveyard to your hand.
+{2}{B}, Sacrifice Omen of the Dead: Scry 2.",1.0,Omen of the Dead,"['Flash', 'Scry']",,,Enchantment,{B},common,['B'],['B'],6693
+"Enchant creature
+You control enchanted creature.
+Enchanted creature has infect. (It deals damage to creatures in the form of -1/-1 counters and to players in the form of poison counters.)",5.0,Corrupted Conscience,['Enchant'],,,Enchantment — Aura,{3}{U}{U},uncommon,['U'],['U'],1714
+"When Cathedral Sanctifier enters the battlefield, you gain 3 life.",1.0,Cathedral Sanctifier,[],1,1,Creature — Human Cleric,{W},common,['W'],['W'],11581
+"Lifelink
+{1}, Sacrifice Alseid of Life's Bounty: Target creature or enchantment you control gains protection from the color of your choice until end of turn.",1.0,Alseid of Life's Bounty,['Lifelink'],1,1,Enchantment Creature — Nymph,{W},uncommon,['W'],['W'],5779
+Put target artifact or creature card from a graveyard onto the battlefield under your control. Shuffle Beacon of Unrest into its owner's library.,5.0,Beacon of Unrest,[],,,Sorcery,{3}{B}{B},rare,['B'],['B'],1036
+,3.0,Merchant of the Vale // Haggle,[],3,2,Creature — Human Peasant // Instant — Adventure,{2}{R} // {R},common,['R'],['R'],6170
+"Whenever you draw your second card each turn, create a 1/1 blue Faerie creature token with flying.
+{4}{U}{R}: Draw a card, then discard a card.",2.0,Improbable Alliance,[],,,Enchantment,{U}{R},uncommon,"['R', 'U']","['R', 'U']",6028
+Put target nonland permanent on top of its owner's library.,5.0,Totally Lost,[],,,Instant,{4}{U},common,['U'],['U'],9361
+"Equipped creature gets +1/+0 and can't be blocked by creatures with flying.
+Equip {3} ({3}: Attach to target creature you control. Equip only as a sorcery.)",1.0,Skyblinder Staff,['Equip'],,,Artifact — Equipment,{1},common,[],[],8982
+"Draw a card.
+Escape—{2}{U}, Exile five other cards from your graveyard. (You may cast this card from your graveyard for its escape cost.)",2.0,Glimpse of Freedom,['Escape'],,,Instant,{1}{U},uncommon,['U'],['U'],11009
+Each player sacrifices two creatures.,4.0,Barter in Blood,[],,,Sorcery,{2}{B}{B},uncommon,['B'],['B'],3727
+Add seven {R}. You can cast only one more spell this turn.,4.0,Irencrag Feat,[],,,Sorcery,{1}{R}{R}{R},rare,['R'],['R'],6029
+"Defender, reach
+{T}: Brimstone Trebuchet deals 1 damage to each opponent.
+Whenever a Knight enters the battlefield under your control, untap Brimstone Trebuchet.",3.0,Brimstone Trebuchet,"['Reach', 'Defender']",3,1,Artifact Creature — Wall,{2}{R},common,['R'],['R'],7436
+Target opponent reveals their hand. You choose a nonland card from it or a card from their graveyard. Exile that card. You lose 1 life.,2.0,Agonizing Remorse,[],,,Sorcery,{1}{B},uncommon,['B'],['B'],12394
+"{T}: Draw a card, then exile a card from your hand face down.
+You may look at cards exiled with Bane Alley Broker.
+{U}{B}, {T}: Return a card exiled with Bane Alley Broker to its owner's hand.",3.0,Bane Alley Broker,[],3,0,Creature — Human Rogue,{1}{U}{B},uncommon,"['B', 'U']","['B', 'U']",12497
+"Flying
+First strike (This creature deals combat damage before creatures without first strike.)",4.0,Anvilwrought Raptor,"['Flying', 'First strike']",1,2,Artifact Creature — Bird,{4},common,[],[],14008
+"When Boneclad Necromancer enters the battlefield, you may exile target creature card from a graveyard. If you do, create a 2/2 black Zombie creature token.",5.0,Boneclad Necromancer,[],3,3,Creature — Human Wizard,{3}{B}{B},common,['B'],['B'],12715
+Return target nonland permanent to its owner's hand. Then that player discards a card if you control a Zombie.,2.0,Compelling Deterrence,[],,,Instant,{1}{U},uncommon,['U'],['U'],7210
+"Yorvo, Lord of Garenbrig enters the battlefield with four +1/+1 counters on it.
+Whenever another green creature enters the battlefield under your control, put a +1/+1 counter on Yorvo. Then if that creature's power is greater than Yorvo's power, put another +1/+1 counter on Yorvo.",3.0,"Yorvo, Lord of Garenbrig",[],0,0,Legendary Creature — Giant Noble,{G}{G}{G},rare,['G'],['G'],5490
+"Flying
+When Voice of the Provinces enters the battlefield, create a 1/1 white Human creature token.",6.0,Voice of the Provinces,['Flying'],3,3,Creature — Angel,{4}{W}{W},common,['W'],['W'],15471
+"When Gleaming Overseer enters the battlefield, amass 1. (Put a +1/+1 counter on an Army you control. If you don't control one, create a 0/0 black Zombie Army creature token first.)
+Zombie tokens you control have hexproof and menace.",3.0,Gleaming Overseer,['Amass'],4,1,Creature — Zombie Wizard,{1}{U}{B},uncommon,"['B', 'U']","['B', 'U']",3500
+,3.0,Ardenvale Tactician // Dizzying Swoop,['Flying'],3,2,Creature — Human Knight // Instant — Adventure,{1}{W}{W} // {1}{W},common,['W'],['W'],8451
+"Whenever you cast a creature spell that has an Adventure, Garenbrig Squire gets +1/+1 until end of turn. (It doesn't need to have gone on the adventure first.)",2.0,Garenbrig Squire,[],2,2,Creature — Human Soldier,{1}{G},common,['G'],['G'],18059
+"Flying
+Whenever Thrummingbird deals combat damage to a player, proliferate. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)",2.0,Thrummingbird,"['Flying', 'Proliferate']",1,1,Creature — Bird Horror,{1}{U},uncommon,['U'],['U'],1170
+"Field of the Dead enters the battlefield tapped.
+{T}: Add {C}.
+Whenever Field of the Dead or another land enters the battlefield under your control, if you control seven or more lands with different names, create a 2/2 black Zombie creature token.",0.0,Field of the Dead,[],,,Land,,rare,[],[],516
+"Flying
+When Thaumaturge's Familiar enters the battlefield, scry 1.",3.0,Thaumaturge's Familiar,"['Scry', 'Flying']",3,1,Artifact Creature — Bird,{3},common,[],[],14684
+"When Battalion Foot Soldier enters the battlefield, you may search your library for any number of cards named Battalion Foot Soldier, reveal them, put them into your hand, then shuffle your library.",3.0,Battalion Foot Soldier,[],2,2,Creature — Human Soldier,{2}{W},common,['W'],['W'],19403
+"Hexproof (This creature can't be the target of spells or abilities your opponents control.)
+Whenever Geist of Saint Traft attacks, create a 4/4 white Angel creature token with flying that's tapped and attacking. Exile that token at end of combat.",3.0,Geist of Saint Traft,['Hexproof'],2,2,Legendary Creature — Spirit Cleric,{1}{W}{U},mythic,"['U', 'W']","['U', 'W']",5161
+Destroy target Human creature.,1.0,Human Frailty,[],,,Instant,{B},uncommon,['B'],['B'],15429
+"When Blight-Breath Catoblepas enters the battlefield, target creature an opponent controls gets -X/-X until end of turn, where X is your devotion to black. (Each {B} in the mana costs of permanents you control counts toward your devotion to black.)",6.0,Blight-Breath Catoblepas,[],2,3,Creature — Beast,{4}{B}{B},common,['B'],['B'],15569
+,2.0,Embereth Shieldbreaker // Battle Display,[],1,2,Creature — Human Knight // Sorcery — Adventure,{1}{R} // {R},uncommon,['R'],['R'],5286
+Flying,3.0,Chapel Geist,['Flying'],3,2,Creature — Spirit,{1}{W}{W},common,['W'],['W'],16639
+"{2}{U}, {T}, Exile a creature card from your graveyard: Create a 2/2 black Zombie creature token, then put a +1/+1 counter on each Zombie creature you control.",4.0,Havengul Runebinder,[],2,2,Creature — Human Wizard,{2}{U}{U},rare,['U'],['U'],7631
+"You may sacrifice a Food. If you do, target creature gets +5/+5 until end of turn. Otherwise, that creature gets +3/+3 until end of turn.",2.0,Insatiable Appetite,[],,,Instant,{1}{G},common,['G'],['G'],14889
+"Flash
+Enchant creature you control
+When Starlit Mantle enters the battlefield, enchanted creature gains hexproof until end of turn. (It can't be the target of spells or abilities your opponents control.)
+Enchanted creature gets +1/+1.",2.0,Starlit Mantle,"['Enchant', 'Flash']",,,Enchantment — Aura,{1}{U},common,['U'],['U'],10114
+"Noosegraf Mob enters the battlefield with five +1/+1 counters on it.
+Whenever a player casts a spell, remove a +1/+1 counter from Noosegraf Mob. If you do, create a 2/2 black Zombie creature token.",6.0,Noosegraf Mob,[],0,0,Creature — Zombie,{4}{B}{B},rare,['B'],['B'],1827
+"Whenever Mistford River Turtle attacks, another target attacking non-Human creature can't be blocked this turn.",4.0,Mistford River Turtle,[],5,1,Creature — Turtle,{3}{U},common,['U'],['U'],14138
+"As an additional cost to cast this spell, sacrifice a creature.
+Destroy target creature.",1.0,Bone Splinters,[],,,Sorcery,{B},common,['B'],['B'],3351
+Destroy all nonland permanents.,6.0,Planar Cleansing,[],,,Sorcery,{3}{W}{W}{W},rare,['W'],['W'],1874
+"Flash (You may cast this spell any time you could cast an instant.)
+When Village Bell-Ringer enters the battlefield, untap all creatures you control.",3.0,Village Bell-Ringer,['Flash'],4,1,Creature — Human Scout,{2}{W},common,['W'],['W'],3540
+"{T}: Add one mana of any color.
+{5}, {T}: Tap target creature.",3.0,Spinning Wheel,[],,,Artifact,{3},uncommon,[],[],5891
+Double strike (This creature deals both first-strike and regular combat damage.),2.0,Fencing Ace,['Double strike'],1,1,Creature — Human Soldier,{1}{W},common,['W'],['W'],7127
+"When Watertrap Weaver enters the battlefield, tap target creature an opponent controls. That creature doesn't untap during its controller's next untap step.",3.0,Watertrap Weaver,[],2,2,Creature — Merfolk Wizard,{2}{U},common,['U'],['U'],8223
+Gain control of target creature until end of turn. Untap that creature. It gains haste until end of turn. (It can attack and {T} this turn.),3.0,Act of Treason,[],,,Sorcery,{2}{R},common,['R'],['R'],2840
+"Enchant creature
+Enchanted creature has ""At the beginning of your upkeep, sacrifice a creature.""",3.0,Inevitable End,['Enchant'],,,Enchantment — Aura,{2}{B},uncommon,['B'],['B'],11566
+"Wishclaw Talisman enters the battlefield with three wish counters on it.
+{1}, {T}, Remove a wish counter from Wishclaw Talisman: Search your library for a card, put it into your hand, then shuffle your library. An opponent gains control of Wishclaw Talisman. Activate this ability only during your turn.",2.0,Wishclaw Talisman,[],,,Artifact,{1}{B},rare,['B'],['B'],2088
+This spell costs {1} less to cast for each enchantment you control.,7.0,Brine Giant,[],6,5,Creature — Giant,{6}{U},common,['U'],['U'],15080
+"Exile target card from a graveyard. If it was a creature card, you gain 3 life. Otherwise, you draw a card.
+Escape—{3}{B}, Exile five other cards from your graveyard. (You may cast this card from your graveyard for its escape cost.)",1.0,Cling to Dust,['Escape'],,,Instant,{B},uncommon,['B'],['B'],10003
+"Choose one —
+• Destroy target artifact.
+• Destroy target enchantment.
+• Exile target card from a graveyard.",2.0,Return to Nature,[],,,Instant,{1}{G},common,['G'],['G'],785
+Outflank deals damage to target attacking or blocking creature equal to the number of creatures you control.,1.0,Outflank,[],,,Instant,{W},common,['W'],['W'],12299
+"Equipped creature gets +1/+2.
+Whenever you draw your second card each turn, attach Mantle of Tides to target creature you control.
+Equip {3} ({3}: Attach to target creature you control. Equip only as a sorcery.)",1.0,Mantle of Tides,['Equip'],,,Artifact — Equipment,{U},common,['U'],['U'],13557
+"Enchant creature
+Enchanted creature gets +2/+2 and can't block.",2.0,Maniacal Rage,['Enchant'],,,Enchantment — Aura,{1}{R},common,['R'],['R'],12482
+"Whenever you gain life, you may pay {2}. If you do, draw a card.
+{3}{W}: Create a 1/1 white Soldier creature token with lifelink.",2.0,Dawn of Hope,[],,,Enchantment,{1}{W},rare,['W'],['W'],942
+"Your devotion to each color and each combination of colors is increased by one.
+{T}: Add one mana of any color. If you control a God, a Demigod, or a legendary enchantment, you gain 1 life.",3.0,Altar of the Pantheon,[],,,Artifact,{3},common,[],[],3933
+"Haste
+{1}: Gingerbrute can't be blocked this turn except by creatures with haste.
+{2}, {T}, Sacrifice Gingerbrute: You gain 3 life.",1.0,Gingerbrute,['Haste'],1,1,Artifact Creature — Food Golem,{1},common,[],[],4857
+"Flying
+Protection from white (This creature can't be blocked, targeted, dealt damage, enchanted, or equipped by anything white.)
+Creatures can't attack you or a planeswalker you control unless their controller pays {1} for each of those creatures.",4.0,Archon of Absolution,"['Flying', 'Protection']",2,3,Creature — Archon,{3}{W},uncommon,['W'],['W'],5065
+"Defender
+{T}: Creatures you control gain haste until end of turn.",2.0,Crashing Drawbridge,['Defender'],4,0,Artifact Creature — Wall,{2},common,[],[],2322
+Destroy target attacking creature.,3.0,Rebuke,[],,,Instant,{2}{W},common,['W'],['W'],11515
+Choose target creature you control and target creature you don't control. The creature you control gets +2/+1 until end of turn if it's a Knight. Then those creatures fight each other. (Each deals damage equal to its power to the other.),2.0,Joust,['Fight'],,,Sorcery,{1}{R},uncommon,['R'],['R'],11482
+"When Yarok's Fenlurker enters the battlefield, each opponent exiles a card from their hand.
+{2}{B}: Yarok's Fenlurker gets +1/+1 until end of turn.",2.0,Yarok's Fenlurker,[],1,1,Creature — Horror,{B}{B},uncommon,['B'],['B'],6488
+"Flying
+Each creature you control that has an Adventure enters the battlefield with an additional +1/+1 counter on it. (It doesn't need to have gone on the adventure first.)",3.0,Mysterious Pathlighter,['Flying'],2,2,Creature — Faerie,{2}{W},uncommon,['W'],['W'],15766
+"({T}: Add {W}.)
+Idyllic Grange enters the battlefield tapped unless you control three or more other Plains.
+When Idyllic Grange enters the battlefield untapped, put a +1/+1 counter on target creature you control.",0.0,Idyllic Grange,[],,,Land — Plains,,common,[],['W'],4758
+"Flying
+When Mist Raven enters the battlefield, return target creature to its owner's hand.",4.0,Mist Raven,['Flying'],2,2,Creature — Bird,{2}{U}{U},common,['U'],['U'],8920
+"You may have Evil Twin enter the battlefield as a copy of any creature on the battlefield, except it has ""{U}{B}, {T}: Destroy target creature with the same name as this creature.""",4.0,Evil Twin,[],0,0,Creature — Shapeshifter,{2}{U}{B},rare,"['B', 'U']","['B', 'U']",1799
+"Enchant creature
+Enchanted creature gets +2/+2 and has first strike and ""Whenever this creature deals combat damage to a player, create a 1/1 white Human Soldier creature token.""",4.0,Commanding Presence,['Enchant'],,,Enchantment — Aura,{3}{W},uncommon,['W'],['W'],9444
+,2.0,Silverflame Squire // On Alert,[],1,2,Creature — Human Soldier // Instant — Adventure,{1}{W} // {2}{W},common,['W'],['W'],12526
+Create two 2/2 white Knight creature tokens with vigilance.,5.0,Knight Watch,[],,,Sorcery,{4}{W},common,['W'],['W'],12867
+"Soulbond (You may pair this creature with another unpaired creature when either enters the battlefield. They remain paired for as long as you control both of them.)
+As long as Tandem Lookout is paired with another creature, each of those creatures has ""Whenever this creature deals damage to an opponent, draw a card.""",3.0,Tandem Lookout,['Soulbond'],1,2,Creature — Human Scout,{2}{U},common,['U'],['U'],2733
+Target blocking creature gets +7/+7 until end of turn.,1.0,Righteousness,[],,,Instant,{W},uncommon,['W'],['W'],9067
+"Seven Dwarves gets +1/+1 for each other creature named Seven Dwarves you control.
+A deck can have up to seven cards named Seven Dwarves.",2.0,Seven Dwarves,[],2,2,Creature — Dwarf,{1}{R},common,['R'],['R'],8577
+Creatures you control get +2/+1 until end of turn.,4.0,Inspired Charge,[],,,Instant,{2}{W}{W},common,['W'],['W'],8792
+"Defender
+{7}: Roving Keep gets +2/+0 and gains trample until end of turn. It can attack this turn as though it didn't have defender.",7.0,Roving Keep,['Defender'],7,5,Artifact Creature — Wall,{7},common,[],[],15136
+"{1}, Reveal X white cards from your hand, Sacrifice Martyr of Sands: You gain three times X life.",1.0,Martyr of Sands,[],1,1,Creature — Human Cleric,{W},common,['W'],['W'],9226
+Destroy target nonblack creature.,2.0,Doom Blade,[],,,Instant,{1}{B},uncommon,['B'],['B'],656
+"Create two 1/1 white Human creature tokens.
+Adamant — If at least three white mana was spent to cast this spell, you gain 1 life for each creature you control.",3.0,Rally for the Throne,['Adamant'],,,Instant,{2}{W},uncommon,['W'],['W'],11037
+"{T}, Sacrifice Evolving Wilds: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle your library.",0.0,Evolving Wilds,[],,,Land,,common,[],[],8
+"At the beginning of your upkeep, you gain 1 life.",2.0,Nyx-Fleece Ram,[],5,0,Enchantment Creature — Sheep,{1}{W},uncommon,['W'],['W'],2609
+"When Mortus Strider dies, return it to its owner's hand.",3.0,Mortus Strider,[],1,1,Creature — Skeleton,{1}{U}{B},common,"['B', 'U']","['B', 'U']",12014
+"Flying
+When Siren Lookout enters the battlefield, it explores. (Reveal the top card of your library. Put that card into your hand if it's a land. Otherwise, put a +1/+1 counter on this creature, then put the card back or put it into your graveyard.)",3.0,Siren Lookout,"['Flying', 'Explore']",2,1,Creature — Siren Pirate,{2}{U},common,['U'],['U'],8614
+"Flying
+Whenever another non-Spirit creature you control dies, create a 1/1 white Spirit creature token with flying.",6.0,Requiem Angel,['Flying'],5,5,Creature — Angel,{5}{W},rare,['W'],['W'],1797
+"As Heraldic Banner enters the battlefield, choose a color.
+Creatures you control of the chosen color get +1/+0.
+{T}: Add one mana of the chosen color.",3.0,Heraldic Banner,[],,,Artifact,{3},uncommon,[],[],1375
+"Flying
+Vigilance (Attacking doesn't cause this creature to tap.)",3.0,Griffin Sentinel,"['Flying', 'Vigilance']",3,1,Creature — Griffin,{2}{W},common,['W'],['W'],12616
+"As long as it's not your turn, spells you cast cost {1} less to cast.",3.0,Naiad of Hidden Coves,[],3,2,Enchantment Creature — Nymph,{2}{U},common,['U'],['U'],7440
+"Flying
+When Gryff Vanguard enters the battlefield, draw a card.",5.0,Gryff Vanguard,['Flying'],2,3,Creature — Human Knight,{4}{U},common,['U'],['U'],14882
+Target opponent reveals their hand. You choose a card from it with converted mana cost 4 or greater and exile that card.,1.0,Appetite for Brains,[],,,Sorcery,{B},uncommon,['B'],['B'],10895
+"When Cauldron Familiar enters the battlefield, each opponent loses 1 life and you gain 1 life.
+Sacrifice a Food: Return Cauldron Familiar from your graveyard to the battlefield.",1.0,Cauldron Familiar,[],1,1,Creature — Cat,{B},uncommon,['B'],['B'],6037
+{B}: Twilight Panther gains deathtouch until end of turn.,1.0,Twilight Panther,[],2,1,Creature — Cat Spirit,{W},common,['W'],"['B', 'W']",15630
+"Deathtouch
+Whenever another nontoken creature dies, you may draw a card.",6.0,Harvester of Souls,['Deathtouch'],5,5,Creature — Demon,{4}{B}{B},rare,['B'],['B'],513
+"Menace
+When Plague Belcher enters the battlefield, put two -1/-1 counters on target creature you control.
+Whenever another Zombie you control dies, each opponent loses 1 life.",3.0,Plague Belcher,['Menace'],4,5,Creature — Zombie Beast,{2}{B},rare,['B'],['B'],2047
+"When Golden Egg enters the battlefield, draw a card.
+{1}, {T}, Sacrifice Golden Egg: Add one mana of any color.
+{2}, {T}, Sacrifice Golden Egg: You gain 3 life.",2.0,Golden Egg,[],,,Artifact — Food,{2},common,[],[],4534
+"Target creature gets +2/+2 until end of turn. If it's an enchanted creature or enchantment creature, it also gains hexproof and indestructible until end of turn. (It can't be the target of spells or abilities your opponents control. Damage and effects that say ""destroy"" don't destroy it.)",1.0,Karametra's Blessing,[],,,Instant,{W},common,['W'],['W'],9063
+"Flash
+Flying",5.0,Wind Strider,"['Flying', 'Flash']",3,3,Creature — Merfolk Wizard,{4}{U},common,['U'],['U'],13009
+"Lifelink
+Beloved Princess can't be blocked by creatures with power 3 or greater.",1.0,Beloved Princess,['Lifelink'],1,1,Creature — Human Noble,{W},common,['W'],['W'],11169
+"As an additional cost to cast this spell, sacrifice a creature.
+Fling deals damage equal to the sacrificed creature's power to any target.",2.0,Fling,[],,,Instant,{1}{R},common,['R'],['R'],2050
+"Return target creature card from your graveyard to the battlefield.
+Flashback—Sacrifice three creatures. (You may cast this card from your graveyard for its flashback cost. Then exile it.)",4.0,Dread Return,['Flashback'],,,Sorcery,{2}{B}{B},uncommon,['B'],['B'],581
+"Whenever another Human enters the battlefield under your control, untap Captain of the Mists.
+{1}{U}, {T}: You may tap or untap target permanent.",3.0,Captain of the Mists,[],3,2,Creature — Human Wizard,{2}{U},rare,['U'],['U'],8031
+"Flying, trample
+When Mindwrack Demon enters the battlefield, put the top four cards of your library into your graveyard.
+Delirium — At the beginning of your upkeep, you lose 4 life unless there are four or more card types among cards in your graveyard.",4.0,Mindwrack Demon,"['Flying', 'Delirium', 'Trample']",5,4,Creature — Demon,{2}{B}{B},mythic,['B'],['B'],7086
+"Vigilance
+Whenever Taranika, Akroan Veteran attacks, untap another target creature you control. Until end of turn, that creature has base power and toughness 4/4 and gains indestructible.",3.0,"Taranika, Akroan Veteran",['Vigilance'],3,3,Legendary Creature — Human Soldier,{1}{W}{W},rare,['W'],['W'],8674
+"Fertilid enters the battlefield with two +1/+1 counters on it.
+{1}{G}, Remove a +1/+1 counter from Fertilid: Target player searches their library for a basic land card, puts it onto the battlefield tapped, then shuffles their library.",3.0,Fertilid,[],0,0,Creature — Elemental,{2}{G},common,['G'],['G'],655
+"Create two 2/2 black Zombie creature tokens.
+Flashback {5}{B}{B} (You may cast this card from your graveyard for its flashback cost. Then exile it.)",4.0,Moan of the Unhallowed,['Flashback'],,,Sorcery,{2}{B}{B},common,['B'],['B'],8403
+"{1}{U}{B}: Exile target creature card from a graveyard. Dimir Doppelganger becomes a copy of that card, except it has this ability.",3.0,Dimir Doppelganger,[],2,0,Creature — Shapeshifter,{1}{U}{B},rare,"['B', 'U']","['B', 'U']",2737
+Target attacking creature gets +2/+2 until end of turn. Each attacking non-Human creature gains trample until end of turn.,1.0,Barge In,[],,,Instant,{R},common,['R'],['R'],8075
+"Enchant creature you control
+When Aspect of Lamprey enters the battlefield, target opponent discards two cards.
+Enchanted creature has lifelink.",4.0,Aspect of Lamprey,['Enchant'],,,Enchantment — Aura,{3}{B},common,['B'],['B'],13442
+"Mythos of Vadrok deals 5 damage divided as you choose among any number of target creatures and/or planeswalkers. If {W}{U} was spent to cast this spell, until your next turn, those permanents can't attack or block and their activated abilities can't be activated.",4.0,Mythos of Vadrok,[],,,Sorcery,{2}{R}{R},rare,['R'],"['R', 'U', 'W']",15698
+"Scorching Dragonfire deals 3 damage to target creature or planeswalker. If that creature or planeswalker would die this turn, exile it instead.",2.0,Scorching Dragonfire,[],,,Instant,{1}{R},common,['R'],['R'],10563
+"Flash
+When Shining Armor enters the battlefield, attach it to target Knight you control.
+Equipped creature gets +0/+2 and has vigilance.
+Equip {3} ({3}: Attach to target creature you control. Equip only as a sorcery.)",2.0,Shining Armor,"['Equip', 'Flash']",,,Artifact — Equipment,{1}{W},common,['W'],['W'],8639
+"Counter target creature or enchantment spell. If that spell is countered this way, exile it instead of putting it into its owner's graveyard.",3.0,Deny the Divine,[],,,Instant,{2}{U},common,['U'],['U'],11343
+"When Banishing Light enters the battlefield, exile target nonland permanent an opponent controls until Banishing Light leaves the battlefield. (That permanent returns under its owner's control.)",3.0,Banishing Light,[],,,Enchantment,{2}{W},uncommon,['W'],['W'],869
+Target creature gets -4/-0 until end of turn. Scry 2.,1.0,Chain to Memory,['Scry'],,,Instant,{U},common,['U'],['U'],15401
+Each player can't cast more than one spell each turn.,3.0,Rule of Law,[],,,Enchantment,{2}{W},uncommon,['W'],['W'],2069
+"Alirios, Enraptured enters the battlefield tapped.
+Alirios doesn't untap during your untap step if you control a Reflection.
+When Alirios enters the battlefield, create a 3/2 blue Reflection creature token.",3.0,"Alirios, Enraptured",[],3,2,Legendary Creature — Human,{2}{U},uncommon,['U'],['U'],11606
+"When Slayer of the Wicked enters the battlefield, you may destroy target Vampire, Werewolf, or Zombie.",4.0,Slayer of the Wicked,[],2,3,Creature — Human Soldier,{3}{W},uncommon,['W'],['W'],17240
+"Flying
+When Dawning Angel enters the battlefield, you gain 4 life.",5.0,Dawning Angel,['Flying'],2,3,Creature — Angel,{4}{W},common,['W'],['W'],12469
+"White creature spells you cast cost {1} less to cast.
+Whenever you cast a creature spell, create a 1/1 white Warrior creature token with vigilance.",3.0,Oketra's Monument,[],,,Legendary Artifact,{3},uncommon,[],[],733
+"Whenever another creature enters the battlefield, you gain 1 life.",1.0,Soul Warden,[],1,1,Creature — Human Cleric,{W},common,['W'],['W'],700
+,5.0,Lonesome Unicorn // Rider in Need,['Vigilance'],3,3,Creature — Unicorn // Sorcery — Adventure,{4}{W} // {2}{W},common,['W'],['W'],12588
+Counter target spell. Scry 2.,4.0,Memory Drain,['Scry'],,,Instant,{2}{U}{U},common,['U'],['U'],10621
+"Tap target creature. It doesn't untap during its controller's next untap step.
+Escape—{2}{U}, Exile three other cards from your graveyard. (You may cast this card from your graveyard for its escape cost.)",1.0,Sleep of the Dead,['Escape'],,,Sorcery,{U},common,['U'],['U'],15454
+Shaper Apprentice has flying as long as you control another Merfolk.,2.0,Shaper Apprentice,[],1,2,Creature — Merfolk Wizard,{1}{U},common,['U'],['U'],10358
+Exile target artifact or enchantment.,2.0,Revoke Existence,[],,,Sorcery,{1}{W},common,['W'],['W'],3317
+"Whenever an opponent draws a card, Underworld Dreams deals 1 damage to that player.",3.0,Underworld Dreams,[],,,Enchantment,{B}{B}{B},uncommon,['B'],['B'],1666
+"Whenever Syr Faren, the Hengehammer attacks, another target attacking creature gets +X/+X until end of turn, where X is Syr Faren's power.",2.0,"Syr Faren, the Hengehammer",[],2,2,Legendary Creature — Human Knight,{G}{G},uncommon,['G'],['G'],8538
+"Raid — When Shipwreck Looter enters the battlefield, if you attacked this turn, you may draw a card. If you do, discard a card.",2.0,Shipwreck Looter,['Raid'],1,2,Creature — Human Pirate,{1}{U},common,['U'],['U'],10912
+"Whenever Vicious Conquistador attacks, each opponent loses 1 life.",1.0,Vicious Conquistador,[],2,1,Creature — Vampire Soldier,{B},uncommon,['B'],['B'],4182
+Destroy target attacking creature. You gain life equal to its power.,4.0,Chastise,[],,,Instant,{3}{W},uncommon,['W'],['W'],10952
+"Flying
+When Archon of Falling Stars dies, you may return target enchantment card from your graveyard to the battlefield.",6.0,Archon of Falling Stars,['Flying'],4,4,Creature — Archon,{4}{W}{W},uncommon,['W'],['W'],10914
+"Whenever Scorch Spitter attacks, it deals 1 damage to the player or planeswalker it's attacking.",1.0,Scorch Spitter,[],1,1,Creature — Elemental Lizard,{R},common,['R'],['R'],9803
+"Whenever you gain life, you may pay {W}. If you do, put a +1/+1 counter on target creature.",2.0,Serene Steward,[],2,2,Creature — Human Cleric Ally,{1}{W},uncommon,['W'],['W'],8044
+"Soulbond (You may pair this creature with another unpaired creature when either enters the battlefield. They remain paired for as long as you control both of them.)
+As long as Spectral Gateguards is paired with another creature, both creatures have vigilance.",5.0,Spectral Gateguards,['Soulbond'],5,2,Creature — Spirit Soldier,{4}{W},common,['W'],['W'],16602
+Target creature gets +2/+2 and gains lifelink until end of turn. (Damage dealt by the creature also causes its controller to gain that much life.),2.0,Moment of Heroism,[],,,Instant,{1}{W},common,['W'],['W'],8262
+Draw three cards. Then discard two cards unless you discard an enchantment card.,3.0,Thirst for Meaning,[],,,Instant,{2}{U},common,['U'],['U'],6857
+"Whenever Towering-Wave Mystic deals damage, target player puts that many cards from the top of their library into their graveyard.",2.0,Towering-Wave Mystic,[],1,2,Creature — Merfolk Wizard,{1}{U},common,['U'],['U'],13937
+"Adamant — If at least three white mana was spent to cast this spell, Ardenvale Paladin enters the battlefield with a +1/+1 counter on it.",4.0,Ardenvale Paladin,['Adamant'],5,2,Creature — Human Knight,{3}{W},common,['W'],['W'],13350
+"Deathtouch
+When Mire Triton enters the battlefield, put the top two cards of your library into your graveyard and you gain 2 life.",2.0,Mire Triton,['Deathtouch'],1,2,Creature — Zombie Merfolk,{1}{B},uncommon,['B'],['B'],6518
+"Flying
+When Topplegeist enters the battlefield, tap target creature an opponent controls.
+Delirium — At the beginning of each opponent's upkeep, if there are four or more card types among cards in your graveyard, tap target creature that player controls.",1.0,Topplegeist,"['Flying', 'Delirium']",1,1,Creature — Spirit,{W},uncommon,['W'],['W'],7621
+"Constellation — Whenever an enchantment enters the battlefield under your control, Triton Waverider gains flying until end of turn.",4.0,Triton Waverider,['Constellation'],3,3,Creature — Merfolk Wizard,{3}{U},common,['U'],['U'],17849
+"Flying
+Whenever another creature enters the battlefield under your control, Griffin Protector gets +1/+1 until end of turn.",4.0,Griffin Protector,['Flying'],3,2,Creature — Griffin,{3}{W},common,['W'],['W'],12760
+"Flash
+Enchant creature
+Enchanted creature gets -2/-0. It gets -6/-0 instead as long as its controller has seven or more cards in their graveyard.",1.0,So Tiny,"['Enchant', 'Flash']",,,Enchantment — Aura,{U},common,['U'],['U'],13676
+"Flying
+When Emancipation Angel enters the battlefield, return a permanent you control to its owner's hand.",3.0,Emancipation Angel,['Flying'],3,3,Creature — Angel,{1}{W}{W},uncommon,['W'],['W'],5313
+"Menace (This creature can't be blocked except by two or more creatures.)
+Adamant — If at least three black mana was spent to cast this spell, Locthwain Paladin enters the battlefield with a +1/+1 counter on it.",4.0,Locthwain Paladin,"['Adamant', 'Menace']",2,3,Creature — Human Knight,{3}{B},common,['B'],['B'],13112
+"Whenever Ogre Errant attacks, another target attacking Knight gains menace until end of turn. (It can't be blocked except by two or more creatures.)",4.0,Ogre Errant,[],4,3,Creature — Ogre Knight,{3}{R},common,['R'],['R'],13719
+"Searing Barrage deals 5 damage to target creature.
+Adamant — If at least three red mana was spent to cast this spell, Searing Barrage deals 3 damage to that creature's controller.",5.0,Searing Barrage,['Adamant'],,,Instant,{4}{R},common,['R'],['R'],13478
+"When Tooth Collector enters the battlefield, target creature an opponent controls gets -1/-1 until end of turn.
+Delirium — At the beginning of each opponent's upkeep, if there are four or more card types among cards in your graveyard, target creature that player controls gets -1/-1 until end of turn.",3.0,Tooth Collector,['Delirium'],2,3,Creature — Human Rogue,{2}{B},uncommon,['B'],['B'],16193
+"Constellation — Whenever an enchantment enters the battlefield under your control, tap target creature an opponent controls.",5.0,Captivating Unicorn,['Constellation'],4,4,Creature — Unicorn,{4}{W},common,['W'],['W'],14357
+"Flying
+Whenever Falkenrath Noble or another creature dies, target player loses 1 life and you gain 1 life.",4.0,Falkenrath Noble,['Flying'],2,2,Creature — Vampire Noble,{3}{B},common,['B'],['B'],547
+{1}{R}: Weaselback Redcap gets +2/+0 until end of turn.,1.0,Weaselback Redcap,[],1,1,Creature — Goblin Knight,{R},common,['R'],['R'],12243
+"When Ghoulraiser enters the battlefield, return a Zombie card at random from your graveyard to your hand.",3.0,Ghoulraiser,[],2,2,Creature — Zombie,{1}{B}{B},common,['B'],['B'],7710
+"Create two 1/1 white Human creature tokens.
+Fateful hour — If you have 5 or less life, create five of those tokens instead.",2.0,Gather the Townsfolk,['Fateful hour'],,,Sorcery,{1}{W},common,['W'],['W'],7611
+"{1}, Sacrifice a creature: Each opponent loses 1 life and you gain 1 life.",2.0,Lampad of Death's Vigil,[],3,1,Enchantment Creature — Nymph,{1}{B},common,['B'],['B'],7901
+"Whenever you cast your first spell during each opponent's turn, you may tap or untap target nonland permanent.",2.0,Stinging Lionfish,[],1,2,Enchantment Creature — Fish,{1}{U},uncommon,['U'],['U'],12355
+Exile any number of target creatures you control. Return those cards to the battlefield under their owner's control at the beginning of the next end step.,3.0,Eerie Interlude,[],,,Instant,{2}{W},rare,['W'],['W'],492
+"(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)
+I, II — Chainer's Torment deals 2 damage to each opponent and you gain 2 life.
+III — Create an X/X black Nightmare Horror creature token, where X is half your life total, rounded up. It deals X damage to you.",4.0,Chainer's Torment,[],,,Enchantment — Saga,{3}{B},uncommon,['B'],['B'],9293
+"Enchant creature
+When Wolfkin Bond enters the battlefield, create a 2/2 green Wolf creature token.
+Enchanted creature gets +2/+2.",5.0,Wolfkin Bond,['Enchant'],,,Enchantment — Aura,{4}{G},common,['G'],['G'],9570
+"Dismal Backwater enters the battlefield tapped.
+When Dismal Backwater enters the battlefield, you gain 1 life.
+{T}: Add {U} or {B}.",0.0,Dismal Backwater,[],,,Land,,common,[],"['B', 'U']",282
+"Flash
+Bloodcrazed Paladin enters the battlefield with a +1/+1 counter on it for each creature that died this turn.",2.0,Bloodcrazed Paladin,['Flash'],1,1,Creature — Vampire Knight,{1}{B},rare,['B'],['B'],3689
+"Flash
+Enchant creature
+Enchanted creature gets +1/+1.
+As long as enchanted creature has vigilance, it assigns combat damage equal to its toughness rather than its power.",1.0,Solid Footing,"['Enchant', 'Flash']",,,Enchantment — Aura,{W},common,['W'],['W'],19539
+"({T}: Add {B}.)
+Witch's Cottage enters the battlefield tapped unless you control three or more other Swamps.
+When Witch's Cottage enters the battlefield untapped, you may put target creature card from your graveyard on top of your library.",0.0,Witch's Cottage,[],,,Land — Swamp,,common,[],['B'],1326
+"When Barrow Witches enters the battlefield, return target Knight card from your graveyard to your hand.",5.0,Barrow Witches,[],4,3,Creature — Human Warlock,{4}{B},common,['B'],['B'],14114
+,2.0,Rimrock Knight // Boulder Rush,[],1,3,Creature — Dwarf Knight // Instant — Adventure,{1}{R} // {R},common,['R'],['R'],9436
+"When Lagonna-Band Storyteller enters the battlefield, you may put target enchantment card from your graveyard on top of your library. If you do, you gain life equal to its converted mana cost.",4.0,Lagonna-Band Storyteller,[],4,3,Creature — Centaur Advisor,{3}{W},uncommon,['W'],['W'],11733
+"Flash (You may cast this spell any time you could cast an instant.)
+Whenever you cast a spell during an opponent's turn, put a +1/+1 counter on Brineborn Cutthroat.",2.0,Brineborn Cutthroat,['Flash'],1,2,Creature — Merfolk Pirate,{1}{U},uncommon,['U'],['U'],8030
+"When Pattern Matcher enters the battlefield, you may search your library for a card with the same name as another creature you control, reveal it, put it into your hand, then shuffle your library.",4.0,Pattern Matcher,[],3,3,Artifact Creature — Golem,{4},uncommon,[],[],15209
+Each player can't cast more than one noncreature spell each turn.,1.0,Deafening Silence,[],,,Enchantment,{W},uncommon,['W'],['W'],2872
+"When Uro enters the battlefield, sacrifice it unless it escaped.
+Whenever Uro enters the battlefield or attacks, you gain 3 life and draw a card, then you may put a land card from your hand onto the battlefield.
+Escape—{G}{G}{U}{U}, Exile five other cards from your graveyard. (You may cast this card from your graveyard for its escape cost.)",3.0,"Uro, Titan of Nature's Wrath",['Escape'],6,6,Legendary Creature — Elder Giant,{1}{G}{U},mythic,"['G', 'U']","['G', 'U']",3159
+,4.0,Garenbrig Carver // Shield's Might,[],2,3,Creature — Human Warrior // Instant — Adventure,{3}{G} // {1}{G},common,['G'],['G'],14023
+"Enchant creature
+When enchanted creature dies, return that card to the battlefield under your control with a +1/+1 counter on it.",3.0,Unholy Indenture,['Enchant'],,,Enchantment — Aura,{2}{B},common,['B'],['B'],6416
+"Flying
+Whenever Eye Collector deals combat damage to a player, each player puts the top card of their library into their graveyard.",1.0,Eye Collector,['Flying'],1,1,Creature — Faerie,{B},common,['B'],['B'],7600
+"Whenever an opponent casts a noncreature spell, that player loses 2 life and you gain 2 life.",3.0,"Kambal, Consul of Allocation",[],3,2,Legendary Creature — Human Advisor,{1}{W}{B},rare,"['B', 'W']","['B', 'W']",626
+"As long as you control an artifact or enchantment, Flutterfox has flying.",2.0,Flutterfox,[],2,2,Creature — Fox,{1}{W},common,['W'],['W'],13224
+"Flash
+When Omen of the Sea enters the battlefield, scry 2, then draw a card.
+{2}{U}, Sacrifice Omen of the Sea: Scry 2.",2.0,Omen of the Sea,"['Flash', 'Scry']",,,Enchantment,{1}{U},common,['U'],['U'],3394
+"{T}: Add {G}. If you control four or more creatures, add {G}{G} instead.",2.0,Leafkin Druid,[],3,0,Creature — Elemental Druid,{1}{G},common,['G'],['G'],2899
+"Flying
+When Cloudkin Seer enters the battlefield, draw a card.",3.0,Cloudkin Seer,['Flying'],1,2,Creature — Elemental Wizard,{2}{U},common,['U'],['U'],4159
+"This spell costs {X} less to cast, where X is your devotion to black. (Each {B} in the mana costs of permanents you control counts toward your devotion to black.)
+Destroy target creature.",4.0,Drag to the Underworld,[],,,Instant,{2}{B}{B},uncommon,['B'],['B'],5517
+"Whenever another Human enters the battlefield under your control, put a +1/+1 counter on Champion of the Parish.",1.0,Champion of the Parish,[],1,1,Creature — Human Soldier,{W},rare,['W'],['W'],4789
+"Trample, haste
+When Burning-Yard Trainer enters the battlefield, another target Knight you control gets +2/+2 and gains trample and haste until end of turn.",5.0,Burning-Yard Trainer,"['Haste', 'Trample']",3,3,Creature — Human Knight,{4}{R},uncommon,['R'],['R'],13094
+{T}: You gain 1 life.,1.0,Soulmender,[],1,1,Creature — Human Cleric,{W},common,['W'],['W'],8192
+({T}: Add {W}.),0.0,Plains,[],,,Basic Land — Plains,,common,[],['W'],
+Up to three target creatures can't block this turn. Destroy any of them that are Walls.,3.0,Blow Your House Down,[],,,Sorcery,{2}{R},common,['R'],['R'],13392
+"As an additional cost to cast this spell, discard a card.
+Draw two cards.",2.0,Thrill of Possibility,[],,,Instant,{1}{R},common,['R'],['R'],958
+"Whenever an Angel enters the battlefield under your control, you gain 4 life.
+Whenever an Angel you control dies, create a 1/1 white Spirit creature token with flying.",2.0,Bishop of Wings,[],4,1,Creature — Human Cleric,{W}{W},rare,['W'],['W'],5083
+"Vigilance (Attacking doesn't cause this creature to tap.)
+When Steadfast Sentry dies, put a +1/+1 counter on target creature you control.",3.0,Steadfast Sentry,['Vigilance'],2,3,Creature — Human Soldier,{2}{W},common,['W'],['W'],16607
+Destroy all nonwhite creatures.,7.0,Mass Calcify,[],,,Sorcery,{5}{W}{W},rare,['W'],['W'],1848
+"Trample
+Whenever you cast a noncreature spell, put a +1/+1 counter on Pyroceratops.",4.0,Pyroceratops,['Trample'],3,2,Creature — Elemental Dinosaur,{3}{R},common,['R'],['R'],16368
+"Flying
+At the beginning of your end step, you may exile an enchantment card from your graveyard. If you do, create a 2/2 black Zombie creature token.",2.0,"Aphemia, the Cacophony",['Flying'],1,2,Legendary Enchantment Creature — Harpy,{1}{B},rare,['B'],['B'],10571
+"When Screeching Skaab enters the battlefield, put the top two cards of your library into your graveyard.",2.0,Screeching Skaab,[],1,2,Creature — Zombie,{1}{U},common,['U'],['U'],10407
+"Flash
+Enchant creature
+When enchanted creature dies, return that card to the battlefield under your control.",3.0,Minion's Return,"['Enchant', 'Flash']",,,Enchantment — Aura,{2}{B},uncommon,['B'],['B'],7274
+,3.0,Knight of the Keep,[],2,3,Creature — Human Knight,{2}{W},common,['W'],['W'],16560
+,4.0,Nyxborn Seaguard,[],5,2,Enchantment Creature — Merfolk Soldier,{2}{U}{U},common,['U'],['U'],16705
+"Flash
+Defender",2.0,Riptide Turtle,"['Flash', 'Defender']",5,0,Creature — Turtle,{1}{U},common,['U'],['U'],8248
