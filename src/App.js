@@ -1,7 +1,7 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 import "tabler-react/dist/Tabler.css";
-import { Nav } from "tabler-react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import { Inventory, Deck } from "./pages";
@@ -9,25 +9,26 @@ import { Inventory, Deck } from "./pages";
 
 function Header () {
     return (
-        <Nav>
-            <Nav.Item value="Inventory" to="/" />
-            <Nav.Item value="Deck" to="/deck" />
-        </Nav>
+        <nav>
+            <Link to="/" >Inventory</Link>
+            <Link to="/deck" >Deck</Link>
+        </nav>
     )
 }
 
 
-function App() {
-  return (
-    <Router>
-        <Header />
-        <Switch>
-            <Route path="/deck" component={Deck} />
-            <Route path="/" component={Inventory} />
-        </Switch>
-    </Router>
-
-  );
+class App extends React.Component {
+    render () {
+        return (
+            <Router>
+                <Header />
+                <Switch>
+                    <Route exact path="/" component={Inventory} />
+                    <Route path="/deck" component={Deck} />
+                </Switch>
+            </Router>
+        );
+    }
 }
 
 export default App;
