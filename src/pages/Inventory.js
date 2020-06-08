@@ -1,17 +1,43 @@
 import React from "react";
 
-import json from "./data.json";
+import { connect } from "react-redux";
+
 import { Table } from "../components";
 
 
-function Inventory() {
+class Inventory extends React.Component {
+    // TODO: Data will need to be grouped.
+    // var groupedData = _.groupBy(data, function(d){return d.division});
     // TODO: Add filtering toggle
-    return (
-        <Table title="Inventory"
-            creatures={json.creatures}
-            instants={json.instants}
-        />
-    )
+
+    render () {
+        var typeGrouped = groupBy(this.props.items, "card_type")
+
+        return (
+            <Table title="Inventory"
+                creatures={typeGrouped.Creature}
+                instants={typeGrouped.Instant}
+                lands={typeGrouped.Land}
+                sorcery={typeGrouped.Sorcery}
+            />
+        )
+    }
 }
 
-export default Inventory;
+var groupBy = function(xs, key) {
+    // Example usage
+    // var groupedByTeam=groupBy(outJSON, 'team')
+    return xs.reduce(function(rv, x) {
+        (rv[x[key]] = rv[x[key]] || []).push(x);
+        return rv;
+    }, {});
+};
+
+const mapStateToProps = (state)=>{
+    return {
+        items: state.items,
+        addedItems: state.addedItems
+    }
+}
+
+export default connect(mapStateToProps)(Inventory);

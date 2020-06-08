@@ -1,23 +1,47 @@
 import React from "react";
 
-import json from "./data.json";
+import { connect } from "react-redux";
 
 import { Table, Dashboard } from "../components";
 
 
-function Deck() {
+class Deck extends React.Component {
     // TODO: Pass card data
-    return (
-        <div style={{
-                display: "flex",
-            }}>
-            <Table title="Deck"
-                creatures={json.creatures}
-                instants={json.instants}
-            />
-            <Dashboard />
-        </div>
-    )
+
+    render() {
+        console.log(this.props.addedItems)
+        var typeGrouped = groupBy(this.props.items, "card_type")
+
+        return (
+            <div style={{
+                    display: "flex",
+                }}>
+                <Table title="Deck"
+                    creatures={typeGrouped.Creature}
+                    instants={typeGrouped.Instant}
+                    lands={typeGrouped.Land}
+                    sorcery={typeGrouped.Sorcery}
+                />
+                <Dashboard />
+            </div>
+        )
+    }
 }
 
-export default Deck;
+var groupBy = function(xs, key) {
+    // Example usage
+    // var groupedByTeam=groupBy(outJSON, 'team')
+    return xs.reduce(function(rv, x) {
+        (rv[x[key]] = rv[x[key]] || []).push(x);
+        return rv;
+    }, {});
+};
+
+const mapStateToProps = (state)=>{
+    return {
+        // items: state.items,
+        items: state.addedItems
+    }
+}
+
+export default connect(mapStateToProps)(Deck);
