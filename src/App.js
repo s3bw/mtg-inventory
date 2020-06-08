@@ -11,8 +11,8 @@ function App() {
     <Router>
         {/*  TODO: Navigation <Header /> */}
         <Switch>
-            <Route path="/" component={Inventory} />
             <Route path="/deck" component={Deck} />
+            <Route path="/" component={Inventory} />
         </Switch>
     </Router>
 

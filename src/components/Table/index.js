@@ -2,14 +2,13 @@ import React from "react";
 
 import { Page, Grid } from "tabler-react";
 
-import json from "./data.json";
 import Card from "../Card";
 
 import styles from "./style.module.css";
 
 
 
-class Table extends  React.Component {
+function Table(props) {
 
    // TODO: Add filtering
 
@@ -23,16 +22,13 @@ class Table extends  React.Component {
   //   </React.Fragment>
   // );
 
-    render() {
-        return (
+    return (
         <div>
-            <Page.Header title="Inventory" />
-            <CardType sub_title="Creatures" items={json.creatures} />
-            <CardType sub_title="Instants" items={json.instants} />
-
+            <Page.Header title={props.title} />
+            <CardType sub_title="Creatures" items={props.creatures} />
+            <CardType sub_title="Instants" items={props.instants} />
         </div>
-        )
-    }
+    )
 }
 
 
