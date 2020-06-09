@@ -70,7 +70,7 @@ def rename_and_drop(row):
         "card_type": row["card_type"],
         "image_url": row["image_url"],
         "rarity": row["rarity"],
-        "edhrec": row["edhrec_rank"],
+        "edhrec": row.get("edhrec_rank", 10000),
         "color_identity": row["color_identity"],
         "inStock": row["Count"],
         "inDeck": 0,
@@ -78,7 +78,6 @@ def rename_and_drop(row):
 
 
 def process(item):
-    print(f"Processing: {item['Name']}")
     # Enrich attributes
     row = enrich(item)
     if not row:
@@ -109,6 +108,7 @@ def isDuplicate(a, b):
 
 
 def main(file_path):
+    count = 0
     inventory = read_csv(file_path)
 
     curr_item = next(inventory)
@@ -122,21 +122,16 @@ def main(file_path):
             next_item = next(inventory)
             duplicate = isDuplicate(curr_item, next_item)
 
+        print(f"Processing: {curr_item['Name']}, n: {count}")
         data = process(curr_item)
         if data:
             write_success(data)
 
         curr_item = next_item
+        count += 1
 
-
-# Read inventory
-# Deduplicate
-# Enrich attributes
-# Create features
-# Rename attributes
-# Save to file
 
 if __name__ == "__main__":
     inventory = "test_file.csv"
-    # inventory = "./data/inventory.csv"
+    inventory = "./data/inventory.csv"
     main(inventory)
