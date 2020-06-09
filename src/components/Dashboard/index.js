@@ -139,10 +139,26 @@ function Dashboard(props) {
                     graphData.card_mana["7"],
                     graphData.card_mana["+8"],
                 ],
+                [
+                    "dist",
+                    graphData.card_mana["0"],
+                    graphData.card_mana["1"],
+                    graphData.card_mana["2"],
+                    graphData.card_mana["3"],
+                    graphData.card_mana["4"],
+                    graphData.card_mana["5"],
+                    graphData.card_mana["6"],
+                    graphData.card_mana["7"],
+                    graphData.card_mana["+8"],
+                ],
             ],
             type: "bar",
+            types: {
+                dist: "spline",
+            },
             colors: {
-                cmc: colors["blue"],
+                cmc: colors["gray-light"],
+                dist: "#0a0c0e",
             },
             names: {
                 cmc: "Card Count",

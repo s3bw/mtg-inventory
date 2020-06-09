@@ -1,6 +1,7 @@
 import React from "react";
 
 import { connect } from "react-redux";
+import { Form, Button } from "tabler-react";
 
 import { Table } from "../components";
 
@@ -16,12 +17,55 @@ const styles = {
         display: "flex",
         "flex-direction": "row",
         "justify-content": "space-between",
-    }
+    },
+}
+
+function FilterCards() {
+        // <span className="mana medium s1"></span>
+    return (
+        <div>
+            <h4>Filter</h4>
+            <Form.SelectGroup pills>
+                <label className={{"selectgroup-item": true}}>
+                    <input type="checkbox" className={"selectgroup-input"} name="green" value="sun"/>
+                    <span className={"selectgroup-button ms ms-g"}/>
+                </label>
+                <label className={{"selectgroup-item": true}}>
+                    <input type="checkbox" className={"selectgroup-input"} name="green" value="sun"/>
+                    <span className={"selectgroup-button ms ms-r"}/>
+                </label>
+                <label className={{"selectgroup-item": true}}>
+                    <input type="checkbox" className={"selectgroup-input"} name="green" value="sun"/>
+                    <span className={"selectgroup-button ms ms-b"}/>
+                </label>
+                <label className={{"selectgroup-item": true}}>
+                    <input type="checkbox" className={"selectgroup-input"} name="green" value="sun"/>
+                    <span className={"selectgroup-button ms ms-w"}/>
+                </label>
+                <label className={{"selectgroup-item": true}}>
+                    <input type="checkbox" className={"selectgroup-input"} name="green" value="sun"/>
+                    <span className={"selectgroup-button ms ms-u"}/>
+                </label>
+            </Form.SelectGroup>
+
+            <h4>Sort</h4>
+            <Form.SelectGroup label="Sort">
+                <Form.SelectGroupItem
+                    label="cmc"
+                    name="size"
+                    value="50"
+                />
+                <Form.SelectGroupItem
+                    label="edhrec"
+                    name="size"
+                    value="50"
+                />
+            </Form.SelectGroup>
+        </div>
+    )
 }
 
 class Inventory extends React.Component {
-    // TODO: Data will need to be grouped.
-    // var groupedData = _.groupBy(data, function(d){return d.division});
     // TODO: Add filtering toggle
 
     render () {
@@ -30,11 +74,14 @@ class Inventory extends React.Component {
         return (
         <div style={styles.page}>
             <h1 style={{color: "#fff"}}>Inventory</h1>
-            <Table creatures={typeGrouped.Creature}
-                   instants={typeGrouped.Instant}
-                   lands={typeGrouped.Land}
-                   sorcery={typeGrouped.Sorcery}
-            />
+            <div style={styles.content}>
+                <Table creatures={typeGrouped.Creature}
+                    instants={typeGrouped.Instant}
+                    lands={typeGrouped.Land}
+                    sorcery={typeGrouped.Sorcery}
+                />
+                <FilterCards />
+            </div>
         </div>
         )
     }

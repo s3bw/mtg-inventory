@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "c3": "^0.7.15",
     "lodash": "^4.17.15",
+    "mana-font": "^1.6.0",
     "react": "^16.13.1",
     "react-c3js": "^0.1.20",
     "react-dom": "^16.13.1",

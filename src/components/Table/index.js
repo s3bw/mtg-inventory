@@ -7,7 +7,6 @@ import Card from "../Card";
 import styles from "./style.module.css";
 
 
-
 // TODO: Add filtering
 function Table(props) {
 
