@@ -20,17 +20,17 @@ def read_cards(file_name):
     """Iterate each card from file."""
     with open(file_name) as file:
         for line in file:
-            yield line.strip().strip("\"")
+            yield line.strip().strip('"')
 
 
 def check_cache(card_name):
-    base64_name = base64.b64encode(bytes(card_name, 'utf-8'))
+    base64_name = base64.b64encode(bytes(card_name, "utf-8"))
     file = Path(CACHE_REQUESTS + base64_name.decode("utf-8"))
     return file.exists()
 
 
 def write_cache(card_name, data):
-    base64_name = base64.b64encode(bytes(card_name, 'utf-8'))
+    base64_name = base64.b64encode(bytes(card_name, "utf-8"))
     file_path = CACHE_REQUESTS + base64_name.decode("utf-8")
     with open(file_path, "w+") as file:
         json.dump(data, file)

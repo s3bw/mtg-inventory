@@ -1,9 +1,17 @@
-import { ADD_TO_DECK } from './action-types/deck-actions'
+import { ADD_TO_DECK, REMOVE_FROM_DECK } from './action-types/deck-actions'
 
-//add cart action
+//add deck action
 export const addToDeck = (id) => {
     return {
         type: ADD_TO_DECK,
+        id
+    }
+}
+
+//remove deck action
+export const removeFromDeck = (id) => {
+    return {
+        type: REMOVE_FROM_DECK,
         id
     }
 }

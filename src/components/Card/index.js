@@ -3,13 +3,17 @@ import React from "react";
 import { connect } from "react-redux";
 import { GalleryCard, Button } from "tabler-react";
 
-import { addToDeck } from "../actions/deckActions";
+import { addToDeck, removeFromDeck } from "../actions/deckActions";
 
 
 class Card extends React.Component {
 
-    handleClick = (id) => {
+    handleAdd = (id) => {
         this.props.addToDeck(id);
+    }
+
+    handleRemove = (id) => {
+        this.props.removeFromDeck(id);
     }
 
     render () {
@@ -23,10 +27,10 @@ class Card extends React.Component {
                 />
                 <GalleryCard.Footer>
                     <Button.List>
-                        <Button color="dark" icon="copy" right>
+                        <Button color="dark" icon="copy" right onClick={() => {this.handleRemove(item.id)}}>
                             '{item.inStock}'
                         </Button>
-                        <Button color="dark" icon="book-open" right onClick={()=>{this.handleClick(item.id)}}>
+                        <Button color="dark" icon="book-open" right onClick={()=>{this.handleAdd(item.id)}}>
                             '{item.inDeck}'
                         </Button>
                     </Button.List>
@@ -46,7 +50,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps= (dispatch)=>{
     return{
         addToDeck: (id)=>{dispatch(addToDeck(id))},
-        // removeFromDeck: (id) => {dispatch(removeFromDeck(id))}
+        removeFromDeck: (id) => {dispatch(removeFromDeck(id))}
     }
 }
 

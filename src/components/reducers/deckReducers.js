@@ -1,4 +1,4 @@
-import { ADD_TO_DECK } from '../actions/action-types/deck-actions'
+import { ADD_TO_DECK, REMOVE_FROM_DECK } from '../actions/action-types/deck-actions'
 
 
 const initState = {
@@ -64,7 +64,36 @@ const deckReducer = (state = initState, action) => {
                 total : state.total + 1
             }
         }
-    } else {
+    } else if (action.type === REMOVE_FROM_DECK) {
+        let removedItem = state.items.find(item=> item.id === action.id)
+        // let itemToRemove= state.addedItems.find(item=> action.id === item.id)
+
+        // Check if there are cards in the deck
+        let cardAvailable = (removedItem.inDeck > 0)
+        if (!cardAvailable) {
+            return state
+        }
+
+        removedItem.inStock += 1
+        removedItem.inDeck -= 1
+        if (removedItem.inDeck === 0) {
+            let new_items = state.addedItems.filter(item=> action.id !== item.id)
+            return{
+                ...state,
+                items: [...state.items],
+                addedItems: new_items,
+                total: state.total - 1
+            }
+        } else {
+            return{
+                ...state,
+                items: [...state.items],
+                total: state.total - 1
+            }
+        }
+    }
+
+    else {
         return state
     }
   }
