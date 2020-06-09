@@ -10,8 +10,8 @@ const initState = {
             inStock: 2,
             inDeck: 0,
             card_type: "Creature",
-            cmc: 2.0,
-            rank: 20,
+            cmc: 3.0,
+            edhrec: 20,
             color_identity: ["W"],
         },
         {
@@ -22,7 +22,7 @@ const initState = {
             inDeck: 0,
             card_type: "Instant",
             cmc: 2.0,
-            rank: 40,
+            edhrec: 40,
             color_identity: ["B"],
         },
         {
@@ -33,7 +33,7 @@ const initState = {
             inDeck: 0,
             card_type: "Land",
             cmc: 0,
-            rank: 41,
+            edhrec: 41,
             color_identity: ["U", "R"],
         },
         {
@@ -44,12 +44,12 @@ const initState = {
             inDeck: 0,
             card_type: "Creature",
             cmc: 2.0,
-            rank: 42,
+            edhrec: 42,
             color_identity: ["B"],
         }
     ],
     addedItems: [],
-    total: 0
+    total: 0,
 }
 
 const deckReducer = (state = initState, action) => {

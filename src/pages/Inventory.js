@@ -21,12 +21,8 @@ const styles = {
 }
 
 class FilterCards extends React.Component {
-
-    constructor(props) {
-        super(props)
-        this.state = {
-            filters: []
-        }
+    state = {
+        filters: []
     }
 
     handleChange = (e) => {
@@ -94,7 +90,17 @@ class FilterCards extends React.Component {
 }
 
 class SortCards extends React.Component {
+    state = {
+        sort: "",
+    }
 
+    toggleSort = (e) => {
+        var newSort = e.target.value
+        this.setState({
+            sort: newSort
+        })
+        this.props.onChange(newSort)
+    }
 
     render() {
         return (
@@ -103,13 +109,17 @@ class SortCards extends React.Component {
                 <Form.SelectGroup label="Sort">
                     <Form.SelectGroupItem
                         label="cmc"
-                        name="size"
-                        value="50"
+                        name="cmc"
+                        value="cmc"
+                        onClick={this.toggleSort}
+                        checked={this.state.sort === "cmc"}
                     />
                     <Form.SelectGroupItem
                         label="edhrec"
-                        name="size"
-                        value="50"
+                        name="edhrec"
+                        value="edhrec"
+                        onClick={this.toggleSort}
+                        checked={this.state.sort === "edhrec"}
                     />
                 </Form.SelectGroup>
             </div>
@@ -120,7 +130,7 @@ class SortCards extends React.Component {
 class Inventory extends React.Component {
     state = {
         initItems: this.props.items,
-        display: this.props.items
+        display: this.props.items,
     }
 
     toggleFilter = (filter) => {
@@ -138,6 +148,19 @@ class Inventory extends React.Component {
 
         this.setState({
             display: cards
+        })
+    }
+
+    toggleSorter = (sort) => {
+        let cards = this.state.display
+
+        if (sort !== this.props.sort) {
+            cards.sort(compareFunc(sort))
+        }
+
+        this.setState({
+            display: cards,
+            sort: sort
         })
     }
 
@@ -163,6 +186,22 @@ class Inventory extends React.Component {
     }
 }
 
+
+// Returns a compare function which compares
+// objects by given attribute. Used for sorting
+var compareFunc = function(sortBy) {
+    return function(a, b) {
+        if (a[sortBy] < b[sortBy]) {
+            return -1;
+        }
+        if (a[sortBy] > b[sortBy]) {
+            return 1;
+        }
+        return 0;
+    }
+}
+
+
 var groupBy = function(xs, key) {
     // Example usage
     // var groupedByTeam=groupBy(outJSON, 'team')
@@ -172,8 +211,9 @@ var groupBy = function(xs, key) {
     }, {});
 };
 
-const mapStateToProps = (state)=>{
+const mapStateToProps = (state) => {
     return {
+        sort: state.sort,
         items: state.items,
         addedItems: state.addedItems
     }
