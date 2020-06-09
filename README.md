@@ -1,5 +1,22 @@
 # MTG Inventory
 
+## Jupyter Lab
+
+```
+pip install -r requirements-data.txt
+jupyter lab
+```
+
+## Update data
+
+```
+# After replacing the inventory file
+python create_card_list.py
+
+# Then gather data from scryfall
+python gether_scryfall_data.py
+```
+
 ## ScryFall API
 
 ```bash

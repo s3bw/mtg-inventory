@@ -27,6 +27,7 @@ venv/
 # Data
 *.csv
 whooshee/
+data/enriched_data.csv
 
 
 # Elm

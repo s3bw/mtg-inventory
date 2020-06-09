@@ -54,10 +54,11 @@ def get_card_info(card_name):
         else:
             print(f"Failed: {card_name}")
             append_line(card_name)
-        time.sleep(1)  # 200ms
+        time.sleep(0.5)  # 200ms
 
     else:
-        print(f"Skipped: {card_name}")
+        pass
+        # print(f"Skipped: {card_name}")
 
 
 if __name__ == "__main__":

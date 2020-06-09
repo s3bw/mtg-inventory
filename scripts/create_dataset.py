@@ -12,6 +12,7 @@ KEEP_ITEMS = {
     "mana_cost",
     "cmc",
     "type_line",
+    # Add card_type
     "oracle_text",
     "power",
     "toughness",
@@ -19,7 +20,10 @@ KEEP_ITEMS = {
     "color_identity",
     "keywords",
     "rarity",
+    # Update to edhrec
     "edhrec_rank",
+    # Get URL
+    # Add inStock count
 }
 
 
