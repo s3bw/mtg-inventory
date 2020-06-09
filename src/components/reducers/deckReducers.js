@@ -1,53 +1,10 @@
 import { ADD_TO_DECK, REMOVE_FROM_DECK } from '../actions/action-types/deck-actions'
 
+import json from "./data.json";
+
 
 const initState = {
-    items: [
-        {
-            id: 2,
-            image_url: "https://img.scryfall.com/cards/border_crop/front/b/7/b7391a75-bc22-47dc-a818-7a5d3ea076c8.jpg?1573504745",
-            name: "Angelic Gift",
-            inStock: 2,
-            inDeck: 0,
-            card_type: "Creature",
-            cmc: 3.0,
-            edhrec: 20,
-            color_identity: ["W"],
-        },
-        {
-            id: 1,
-            image_url: "https://img.scryfall.com/cards/border_crop/front/c/1/c128272d-4611-477c-84b9-081bddcc7188.jpg?1562933799",
-            name: "Victim of Night",
-            inStock: 1,
-            inDeck: 0,
-            card_type: "Instant",
-            cmc: 2.0,
-            edhrec: 40,
-            color_identity: ["B"],
-        },
-        {
-            id: 3,
-            image_url: "https://img.scryfall.com/cards/border_crop/front/0/0/00f8ec3c-d2cb-477c-a7e8-ff497df646d6.jpg?1563899954",
-            name: "Temple of Epiphany",
-            inStock: 1,
-            inDeck: 0,
-            card_type: "Land",
-            cmc: 0,
-            edhrec: 41,
-            color_identity: ["U", "R"],
-        },
-        {
-            id: 4,
-            image_url: "https://img.scryfall.com/cards/border_crop/front/1/6/16b122f8-fcd9-4b2a-92f6-f0ed7307ff58.jpg?1563899071",
-            name: "Yarok's Fenlurker",
-            inStock: 1,
-            inDeck: 0,
-            card_type: "Creature",
-            cmc: 2.0,
-            edhrec: 42,
-            color_identity: ["B"],
-        }
-    ],
+    items: json,
     addedItems: [],
     total: 0,
 }
