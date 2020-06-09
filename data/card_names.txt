@@ -12,6 +12,7 @@ Ancestral Blade
 Angel of Vitality
 Angelic Gift
 Angelic Skirmisher
+Anticipate
 Anvilwrought Raptor
 "Aphemia, the Cacophony"
 Appetite for Brains
@@ -32,10 +33,12 @@ Beacon of Unrest
 Befuddle
 Beloved Princess
 Bishop of Wings
+Blade Banish
 Blight-Breath Catoblepas
 Blind Obedience
 Bloodcrazed Paladin
 Bloodhaze Wolverine
+Blossoming Sands
 Blossoming Sands
 Blow Your House Down
 Bonds of Faith
@@ -59,6 +62,7 @@ Chain to Memory
 Chainer's Torment
 Champion of the Parish
 Chapel Geist
+Charge of the Forever-Beast
 Chastise
 Claim the Firstborn
 Cling to Dust
@@ -126,6 +130,7 @@ Final Death
 Fire Prophecy
 Fling
 Flutterfox
+Flycatcher Giraffid
 Forbidden Alchemy
 Fortifying Provisions
 Frenzied Arynx
@@ -156,6 +161,7 @@ Griffin Protector
 Griffin Sentinel
 Gryff Vanguard
 Gutter Skulk
+Hampering Snare
 Harvester of Souls
 Havengul Runebinder
 Heliod's Punishment
@@ -163,6 +169,7 @@ Henge Walker
 Herald of Torment
 Heraldic Banner
 Human Frailty
+Huntmaster Liger
 Ichthyomorphosis
 Idyllic Grange
 Impassioned Orator
@@ -190,6 +197,7 @@ Lightning Stormkin
 Locthwain Paladin
 Lonesome Unicorn // Rider in Need
 Lord of the Accursed
+Lurking Deadeye
 Mad Ratter
 Makeshift Mauler
 Maniacal Rage
@@ -200,6 +208,7 @@ Medomai's Prophecy
 Memory Drain
 Memory Theft
 Merchant of the Vale // Haggle
+Migratory Greathorn
 Mindwrack Demon
 Minion's Return
 Mire Triton
@@ -234,11 +243,13 @@ Path of Bravery
 Pattern Matcher
 Phalanx Tactics
 Pharika's Spawn
+Phase Dolphin
 Pious Wayfarer
 Plague Belcher
 Plains
 Planar Cleansing
 Pore Over the Pages
+Primal Empathy
 Prismite
 Pyroceratops
 Rabid Bite
@@ -289,6 +300,7 @@ Skyblinder Staff
 Slayer of the Wicked
 Sleep of the Dead
 Smitten Swordmaster // Curry Favor
+Snare Tactician
 So Tiny
 Solid Footing
 Soul Manipulation
@@ -310,6 +322,7 @@ Tandem Lookout
 "Taranika, Akroan Veteran"
 Temple of Epiphany
 Temple Thief
+Tentative Connection
 Thaumaturge's Familiar
 The Birth of Meletis
 Thicket Crasher
@@ -318,6 +331,7 @@ Thraben Heretic
 Threnody Singer
 Thrill of Possibility
 Thrummingbird
+Thwart the Enemy
 Tooth Collector
 Topplegeist
 Totally Lost
@@ -338,6 +352,7 @@ Underworld Connections
 Underworld Dreams
 Unexplained Vision
 Unholy Indenture
+Unpredictable Cyclone
 "Uro, Titan of Nature's Wrath"
 Venomous Hierophant
 Vial of Dragonfire
