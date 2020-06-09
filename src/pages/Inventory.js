@@ -5,6 +5,20 @@ import { connect } from "react-redux";
 import { Table } from "../components";
 
 
+const styles = {
+    page: {
+        display: "flex",
+        "padding-left": "10px",
+        "padding-right": "10px",
+        "flex-direction": "column",
+    },
+    content: {
+        display: "flex",
+        "flex-direction": "row",
+        "justify-content": "space-between",
+    }
+}
+
 class Inventory extends React.Component {
     // TODO: Data will need to be grouped.
     // var groupedData = _.groupBy(data, function(d){return d.division});
@@ -14,7 +28,7 @@ class Inventory extends React.Component {
         var typeGrouped = groupBy(this.props.items, "card_type")
 
         return (
-        <div>
+        <div style={styles.page}>
             <h1 style={{color: "#fff"}}>Inventory</h1>
             <Table creatures={typeGrouped.Creature}
                    instants={typeGrouped.Instant}

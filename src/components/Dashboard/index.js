@@ -151,7 +151,7 @@ function Dashboard(props) {
                 x: {
                     type: "category",
                     categories: ["0", "1", "2", "3", "4", "5", "6", "7", "+8"]
-                }
+                },
             }
         }
     }
@@ -194,7 +194,7 @@ function Dashboard(props) {
             </Card>
 
             <Card>
-                <Card.Header>colour breakdown</Card.Header>
+                <Card.Header>Colour Breakdown</Card.Header>
                 <Card.Body>
                     <C3Chart
                         data={pie.data}

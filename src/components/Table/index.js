@@ -25,14 +25,13 @@ function Table(props) {
             <CardType sub_title="Enchantments" items={enchantments} />
             <CardType sub_title="Instants" items={instants} />
             <CardType sub_title="Lands" items={lands} />
-            <CardType sub_title="Socery" items={sorcery} />
+            <CardType sub_title="Sorcery" items={sorcery} />
         </div>
     )
 }
 
 
 function CardType(props) {
-        // <div className={styles.grid}>
     return (
         <div>
             <h4 className={styles.heading1}>{props.sub_title}</h4>
