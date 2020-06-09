@@ -8,19 +8,9 @@ import styles from "./style.module.css";
 
 
 
+// TODO: Add filtering
 function Table(props) {
 
-   // TODO: Add filtering
-
-  // const options = (
-  //  <React.Fragment>
-  //     <Form.Select className="w-auto mr-2">
-  //       <option value="asc">Newest</option>
-  //       <option value="desc">Oldest</option>
-  //     </Form.Select>
-  //     {/* TODO: This moves to nav<Form.Input icon="search" placeholder="Search photo" />*/}
-  //   </React.Fragment>
-  // );
     var creatures = (props.creatures === undefined) ? [] : props.creatures;
     var artifacts = (props.artifacts === undefined) ? [] : props.artifacts;
     var enchantments = (props.enchantments === undefined) ? [] : props.enchantments;
@@ -30,7 +20,6 @@ function Table(props) {
 
     return (
         <div>
-            <Page.Header title={props.title} />
             <CardType sub_title="Creatures" items={creatures} />
             <CardType sub_title="Artifacts" items={artifacts} />
             <CardType sub_title="Enchantments" items={enchantments} />
@@ -46,7 +35,7 @@ function CardType(props) {
         // <div className={styles.grid}>
     return (
         <div>
-            <Page.Header subTitle={props.sub_title} />
+            <h4 className={styles.heading1}>{props.sub_title}</h4>
 
             <Grid.Row className="row-cards">
             {props.items.map((item, key) => (

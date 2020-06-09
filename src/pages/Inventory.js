@@ -14,12 +14,14 @@ class Inventory extends React.Component {
         var typeGrouped = groupBy(this.props.items, "card_type")
 
         return (
-            <Table title="Inventory"
-                creatures={typeGrouped.Creature}
-                instants={typeGrouped.Instant}
-                lands={typeGrouped.Land}
-                sorcery={typeGrouped.Sorcery}
+        <div>
+            <h1 style={{color: "#fff"}}>Inventory</h1>
+            <Table creatures={typeGrouped.Creature}
+                   instants={typeGrouped.Instant}
+                   lands={typeGrouped.Land}
+                   sorcery={typeGrouped.Sorcery}
             />
+        </div>
         )
     }
 }

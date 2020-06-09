@@ -1,10 +1,16 @@
-/*.galleryCard {
-    max-height: 350px;
-    width: auto;
+.btnList {
+    display: flex;
+    justify-content: space-around;
 }
 
-.image {
-    object-fit: contain;
-    height: 100%;
-    width: 100%;
-}*/
+.cardContainer {
+    background-color: #0A0C0E;
+    padding: 0.25rem !important;
+}
+
+.btns {
+    background-color: #fff;
+}
+.btns:hover {
+    border-color: #fff;
+}

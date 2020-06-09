@@ -9,8 +9,9 @@ const initState = {
             name: "Angelic Gift",
             inStock: 2,
             inDeck: 0,
-            card_type: "Creature"
-
+            card_type: "Creature",
+            cmc: 2.0,
+            color_identity: ["W"],
         },
         {
             id: 1,
@@ -18,7 +19,9 @@ const initState = {
             name: "Victim of Night",
             inStock: 1,
             inDeck: 0,
-            card_type: "Instant"
+            card_type: "Instant",
+            cmc: 2.0,
+            color_identity: ["B"],
         },
         {
             id: 3,
@@ -27,6 +30,18 @@ const initState = {
             inStock: 1,
             inDeck: 0,
             card_type: "Land",
+            cmc: 0,
+            color_identity: ["U", "R"],
+        },
+        {
+            id: 4,
+            image_url: "https://img.scryfall.com/cards/border_crop/front/1/6/16b122f8-fcd9-4b2a-92f6-f0ed7307ff58.jpg?1563899071",
+            name: "Yarok's Fenlurker",
+            inStock: 1,
+            inDeck: 0,
+            card_type: "Creature",
+            cmc: 2.0,
+            color_identity: ["B"],
         }
     ],
     addedItems: [],
