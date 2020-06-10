@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Page, Grid } from "tabler-react";
+import { Grid } from "tabler-react";
 
 import Card from "../Card";
 
