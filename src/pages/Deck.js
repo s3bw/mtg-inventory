@@ -16,6 +16,10 @@ const styles = {
         display: "flex",
         "flex-direction": "row",
         "justify-content": "space-between",
+    },
+    sideBar: {
+        "max-width": "400px",
+        "min-width": "400px"
     }
 }
 
@@ -32,11 +36,15 @@ class Deck extends React.Component {
                 <div style={styles.content}>
                     <Table title="Deck"
                         creatures={typeGrouped.Creature}
+                        artifacts={typeGrouped.Artifact}
+                        enchantments={typeGrouped.Enchantment}
                         instants={typeGrouped.Instant}
                         lands={typeGrouped.Land}
                         sorcery={typeGrouped.Sorcery}
                     />
-                    <Dashboard items={this.props.items}/>
+                    <div style={styles.sideBar}>
+                        <Dashboard items={this.props.items}/>
+                    </div>
                 </div>
             </div>
         )

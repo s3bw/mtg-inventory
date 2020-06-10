@@ -18,6 +18,13 @@ const styles = {
         "flex-direction": "row",
         "justify-content": "space-between",
     },
+    sideBarContainer: {
+        "max-width": "150px",
+        "min-width": "150px"
+    },
+    sideBar: {
+        position: "fixed",
+    }
 }
 
 class FilterCards extends React.Component {
@@ -141,7 +148,7 @@ class Inventory extends React.Component {
         // in the filters
         if (filter.length > 0) {
             cards = cards.filter((card) => {
-                var remain = card.color_identity.some(r=> filter.includes(r))
+                var remain = filter.every(r=> card.color_identity.includes(r))
                 return remain
             })
         }
@@ -173,12 +180,16 @@ class Inventory extends React.Component {
             <div style={styles.content}>
                 <Table creatures={typeGrouped.Creature}
                     instants={typeGrouped.Instant}
+                    artifacts={typeGrouped.Artifact}
+                    enchantments={typeGrouped.Enchantment}
                     lands={typeGrouped.Land}
                     sorcery={typeGrouped.Sorcery}
                 />
-                <div>
-                    <FilterCards onChange={this.toggleFilter}/>
-                    <SortCards onChange={this.toggleSorter} />
+                <div style={styles.sideBarContainer}>
+                    <div style={styles.sideBar}>
+                        <FilterCards onChange={this.toggleFilter}/>
+                        <SortCards onChange={this.toggleSorter} />
+                    </div>
                 </div>
             </div>
         </div>
