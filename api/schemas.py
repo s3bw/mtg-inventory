@@ -34,8 +34,14 @@ class CardSchema(Schema):
     quantity = fields.Int()
 
 
+class DeckItemSchema(Schema):
+
+    id = fields.Str(required=True)
+    quantity = fields.Int(required=True)
+
+
 class DeckSchema(Schema):
 
-    id = fields.UUID()
+    id = fields.String()
     name = fields.Str(required=True)
-    items = fields.List(fields.Str())
+    items = fields.List(fields.Nested(DeckItemSchema), required=True)

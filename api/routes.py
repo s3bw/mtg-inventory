@@ -1,85 +1,143 @@
 from flask import Blueprint
 from flask_restplus import Api, Resource
+from flask_restplus import fields
 from marshmallow import INCLUDE
 
 from .library import verify_payload
-from .schemas import CardSchema
+from .schemas import CardSchema, DeckSchema, DeckItemSchema
+from .models import db
+from .models import Cards, Decks, DeckCards
 
 
 routes = Blueprint("route", __name__)
 api = Api(routes)
 
+Card = {
+    "id": fields.String(),
+    "image_url": fields.String(),
+    "name": fields.String(),
+    "quantity": fields.Integer(),
+    "inStock": fields.Integer(),
+    "card_type": fields.String(),
+    "cmc": fields.Float(),
+    "edhrec": fields.Integer,
+    "color_identity": fields.List(fields.String),
+}
+
 
 @api.route("/inventory")
-class Inventory(Resource):
+class InventoryRoutes(Resource):
     """Fetch inventory."""
 
+    @api.marshal_with(Card, as_list=True)
     def get(self):
         """ This should return everything in
             my collection.
         """
+        cards = Cards.query.all()
         # Calculate 'InStock' and 'InDeck'
         # attributes.
+
         # InStock = card.quantity - sum_for_all_decks(n of cards)
         #   this means that if a card is in another deck it can
         #   not be selected for current deck. (We should still
         #   return cards with a 0 InStock value).
+
         # InDeck = 0 (this depends on the client side and the
         #   current deck that has been selected.
-        return [
-            # Card,
-            # Card,
-            # Card,
-        ]
+        return [card.to_json for card in cards]
 
     @verify_payload(CardSchema, unknown=INCLUDE)
     def post(self, payload):
         """Add a card to the collection."""
-        # Return base64'd card name, this will
-        # be used as an ID.
+        card = Cards.query.filter_by(id=payload["id"]).first()
+        if card:
+            card.quantity += payload["quantity"]
+        else:
+            card = Cards(
+                id=payload["id"],
+                name=payload["name"],
+                mana_cost=payload["mana_cost"],
+                cmc=payload["cmc"],
+                type_line=payload["type_line"],
+                card_type=payload["card_type"],
+                image_url=payload["image_url"],
+                rarity=payload["rarity"],
+                edhrec=payload["edhrec"],
+                color_identity=payload["color_identity"],
+                quantity=payload["quantity"],
+            )
+        db.session.add(card)
+        db.session.commit()
         return {"id": payload["id"]}
 
 
+Deck = {
+    "id": fields.String(),
+    "name": fields.String(),
+}
+
+
 @api.route("/deck")
-class AllDecks(Resource):
+class AllDeckRoutes(Resource):
     """Fetch decks."""
 
+    @api.marshal_with(Deck, as_list=True)
     def get(self):
         """Fetch all decks."""
-        return [
-            # Deck,
-            # Deck,
-            # Deck,
-        ]
+        decks = Decks.query.all()
+        return [deck.to_json for deck in decks]
 
-    @verify_payload(CardSchema, unknown=INCLUDE)
-    def post(self):
+    @verify_payload(DeckSchema, unknown=INCLUDE)
+    def post(self, payload):
         """Create a new deck."""
-        # When creating a new deck the id of
-        # the items within the deck with need
-        # to be added to a card_deck table.
+        if "id" in payload:
+            deck = Decks.query.filter_by(id=payload["id"]).first()
+            if not deck:
+                return {"message": "Deck does not exist"}, 404
 
-        # Returns a uuid of the new deck
-        pass
+            deck.name = payload["name"]
+            deleted_cards = DeckCards.query.filter_by(deck_id=deck.id).all()
+            for card in deleted_cards:
+                db.session.delete(card)
+
+        else:
+            deck = Decks(name=payload["name"])
+            db.session.add(deck)
+            db.session.commit()
+
+        for item in payload["items"]:
+            deck_card = DeckCards(
+                card_id=item["id"], deck_id=deck.id, quantity=item["quantity"],
+            )
+            db.session.add(deck_card)
+
+        db.session.commit()
+        return {"id": deck.id}
+
+
+DeckItem = {"id": fields.String(), "quantity": fields.Integer()}
 
 
 @api.route("/deck/<string:id>")
-class Deck(Resource):
+class DeckRoutes(Resource):
     """Interact against Deck resource."""
 
     def get(self, id):
-        """Fetch a deck by it's id."""
-        # Returns 'Deck' object
-        # this will contain a list of items in
-        # the deck and how many of each items
-        # exist in the deck. E.g. (2x of item.id)
-        pass
+        """Fetch a deck contents by it's id."""
+        items = DeckCards.query.filter_by(deck_id=id).all()
+        return [i.to_json for i in items]
 
     def delete(self, id):
         """Delete a deck by id."""
-        # Once a deck is deleted items that have
-        # been added to this deck will have to
-        # be removed.
+        deck = Decks.query.filter_by(id=id).first()
+        if not deck:
+            return {"message": "Deck does not exist"}, 404
 
-        # Returns 'success' once deck is deleted
-        pass
+        deleted_cards = DeckCards.query.filter_by(deck_id=deck.id).all()
+        for card in deleted_cards:
+            db.session.delete(card)
+
+        db.session.delete(deck)
+        db.session.commit()
+        return {"message": "success"}
