@@ -12,6 +12,8 @@ class AppConfig(EnvConfig):
     DEBUG = param.Bool(default=False)
     LOG_LEVEL = param.Str(default="INFO")
 
+    ENABLE_CORS = param.Bool(default=False)
+
     # DATABASE_URL = param.Str(
     #     default="postgres://postgres:postgres@localhost:5432/dbname"
     # )

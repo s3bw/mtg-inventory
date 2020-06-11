@@ -72,7 +72,7 @@ def rename_and_drop(row):
         "rarity": row["rarity"],
         "edhrec": row.get("edhrec_rank", 10000),
         "color_identity": row["color_identity"],
-        "inStock": row["Count"],
+        "quantity": row["Count"],
         "inDeck": 0,
     }
 

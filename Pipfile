@@ -10,6 +10,15 @@ flake8 = "*"
 [packages]
 requests = "*"
 toolz = "*"
+flask = "*"
+flask-restplus = "*"
+flask-sqlalchemy = "*"
+flask-alembic = "*"
+flask-cors = "*"
+werkzeug = "<1.0.0"
+wrapt = "*"
+marshmallow = "*"
+py-envconfig = "*"
 
 [requires]
 python_version = "3.8"

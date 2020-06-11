@@ -1,10 +1,9 @@
-import logging
-
-from flask import request
-from flask import g, Blueprint
+from flask import Blueprint
 from flask_restplus import Api, Resource
+from marshmallow import INCLUDE
 
 from .library import verify_payload
+from .schemas import CardSchema
 
 
 routes = Blueprint("route", __name__)
@@ -33,18 +32,27 @@ class Inventory(Resource):
             # Card,
         ]
 
-    # @verify_payload(Card)
+    @verify_payload(CardSchema, unknown=INCLUDE)
     def post(self, payload):
         """Add a card to the collection."""
         # Return base64'd card name, this will
         # be used as an ID.
-        return None
+        return {"id": payload["id"]}
 
 
 @api.route("/deck")
 class AllDecks(Resource):
     """Fetch decks."""
 
+    def get(self):
+        """Fetch all decks."""
+        return [
+            # Deck,
+            # Deck,
+            # Deck,
+        ]
+
+    @verify_payload(CardSchema, unknown=INCLUDE)
     def post(self):
         """Create a new deck."""
         # When creating a new deck the id of
@@ -54,17 +62,8 @@ class AllDecks(Resource):
         # Returns a uuid of the new deck
         pass
 
-    def get(self):
-        """Fetch all decks."""
 
-        return [
-            # Deck,
-            # Deck,
-            # Deck,
-        ]
-
-
-@api.route("/deck/<str:id>")
+@api.route("/deck/<string:id>")
 class Deck(Resource):
     """Interact against Deck resource."""
 
