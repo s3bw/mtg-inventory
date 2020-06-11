@@ -9,6 +9,7 @@ import { Table, FilterCards } from "../components";
 const styles = {
     page: {
         display: "flex",
+        "padding-top": "10px",
         "padding-left": "10px",
         "padding-right": "10px",
         "flex-direction": "column",

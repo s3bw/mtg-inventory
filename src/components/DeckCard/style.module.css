@@ -1,0 +1,19 @@
+.deckCard {
+    width: 400px;
+    height: 90px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    font-size: larger;
+}
+.deckCardContent {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.deckCardBtns {
+    justify-content: space-between;
+    display: flex;
+}
