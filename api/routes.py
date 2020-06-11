@@ -2,9 +2,10 @@ from flask import Blueprint
 from flask_restplus import Api, Resource
 from flask_restplus import fields
 from marshmallow import INCLUDE
+from sqlalchemy import case
 
 from .library import verify_payload
-from .schemas import CardSchema, DeckSchema, DeckItemSchema
+from .schemas import CardSchema, DeckSchema
 from .models import db
 from .models import Cards, Decks, DeckCards
 
@@ -34,18 +35,35 @@ class InventoryRoutes(Resource):
         """ This should return everything in
             my collection.
         """
-        cards = Cards.query.all()
-        # Calculate 'InStock' and 'InDeck'
-        # attributes.
-
         # InStock = card.quantity - sum_for_all_decks(n of cards)
         #   this means that if a card is in another deck it can
         #   not be selected for current deck. (We should still
         #   return cards with a 0 InStock value).
-
-        # InDeck = 0 (this depends on the client side and the
-        #   current deck that has been selected.
-        return [card.to_json for card in cards]
+        cards = (
+            db.session.query(
+                Cards.id,
+                Cards.image_url,
+                Cards.name,
+                Cards.quantity,
+                case(
+                    [
+                        (
+                            DeckCards.quantity,
+                            Cards.quantity - db.func.sum(DeckCards.quantity),
+                        )
+                    ],
+                    else_=0,
+                ).label("inStock"),
+                Cards.card_type,
+                Cards.cmc,
+                Cards.edhrec,
+                Cards.color_identity,
+            )
+            .outerjoin(DeckCards, Cards.id == DeckCards.card_id)
+            .group_by(Cards.id)
+            .all()
+        )
+        return [card._asdict() for card in cards]
 
     @verify_payload(CardSchema, unknown=INCLUDE)
     def post(self, payload):
@@ -107,6 +125,10 @@ class AllDeckRoutes(Resource):
             db.session.commit()
 
         for item in payload["items"]:
+            card = Cards.query.filter_by(id=item["id"]).first()
+            if not card:
+                return {"message": "Card does not exist"}, 404
+
             deck_card = DeckCards(
                 card_id=item["id"], deck_id=deck.id, quantity=item["quantity"],
             )
@@ -123,6 +145,7 @@ DeckItem = {"id": fields.String(), "quantity": fields.Integer()}
 class DeckRoutes(Resource):
     """Interact against Deck resource."""
 
+    @api.marshal_with(DeckItem, as_list=True)
     def get(self, id):
         """Fetch a deck contents by it's id."""
         items = DeckCards.query.filter_by(deck_id=id).all()

@@ -6,6 +6,10 @@ curl -XPOST localhost:4000/api/v1/inventory \
     -H "Content-Type: application/json" \
     -d '{"id": "YWVyaWFsK2Fzc2F1bHQ=", "name": "Aerial Assault", "mana_cost": "{2}{W}", "cmc": 3.0, "type_line": "Sorcery", "card_type": "Sorcery", "image_url": "https://img.scryfall.com/cards/border_crop/front/6/4/64d9c182-cbb3-4791-90dd-0e533ddeebda.jpg?1563898171", "rarity": "common", "edhrec": 10177, "color_identity": ["W"], "quantity": "3", "inDeck": 0}'
 
+curl -XPOST localhost:4000/api/v1/inventory \
+    -H "Content-Type: application/json" \
+    -d '{"id": "YWxpcmlvcyUyQytlbnJhcHR1cmVk", "name": "Alirios, Enraptured", "mana_cost": "{2}{U}", "cmc": 3.0, "type_line": "Legendary Creature \u2014 Human", "card_type": "Creature", "image_url": "https://img.scryfall.com/cards/border_crop/front/2/6/26f9ebbe-3791-4d19-88d2-d5de95faff48.jpg?1581479280", "rarity": "uncommon", "edhrec": 11606, "color_identity": ["U"], "quantity": 1}'
+
 curl -XPOST localhost:4000/api/v1/deck \
     -H 'Content-Type: application/json' \
     -d '{"name": "White/Black", "items": []}'

@@ -2,10 +2,16 @@ import enum
 import uuid
 from datetime import datetime
 
+
 from sqlalchemy import Enum
 import sqlalchemy.types as types
 from flask_sqlalchemy import SQLAlchemy
 
+
+# from flask import Flask
+# app = Flask(__name__)
+# db = SQLAlchemy(app)
+# app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///db.sqlite"
 
 db = SQLAlchemy()
 
@@ -37,6 +43,23 @@ class PythonList(types.TypeDecorator):
         return [v for v in value.split("|") if v]
 
 
+class PythonEnum(types.TypeDecorator):
+
+    impl = types.String
+
+    def __init__(self, enumtype, *args, **kwargs):
+        super(PythonEnum, self).__init__(*args, **kwargs)
+        self._enumtype = enumtype
+
+    def process_bind_param(self, value, dialect):
+        if isinstance(value, int):
+            return value
+        return self._enumtype(value).name
+
+    def process_result_value(self, value, dialect):
+        return self._enumtype[value].name
+
+
 class Cards(db.Model):
     __tablename__ = "cards"
 
@@ -45,12 +68,13 @@ class Cards(db.Model):
     mana_cost = db.Column(db.String(100))
     cmc = db.Column(db.DECIMAL(3, 1))
     type_line = db.Column(db.String(100))
-    card_type = db.Column(Enum(CardType))
+    card_type = db.Column(PythonEnum(CardType))
     image_url = db.Column(db.Text)
-    rarity = db.Column(Enum(Rarity))
+    rarity = db.Column(PythonEnum(Rarity))
     edhrec = db.Column(db.BigInteger)
     color_identity = db.Column(PythonList)
     quantity = db.Column(db.Integer)
+    # in_decks = db.relationship("DeckCards", backref="cards")
 
     @property
     def to_json(self):
