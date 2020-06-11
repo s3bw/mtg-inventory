@@ -2,16 +2,9 @@ import enum
 import uuid
 from datetime import datetime
 
-
-from sqlalchemy import Enum
 import sqlalchemy.types as types
 from flask_sqlalchemy import SQLAlchemy
 
-
-# from flask import Flask
-# app = Flask(__name__)
-# db = SQLAlchemy(app)
-# app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///db.sqlite"
 
 db = SQLAlchemy()
 
@@ -74,23 +67,6 @@ class Cards(db.Model):
     edhrec = db.Column(db.BigInteger)
     color_identity = db.Column(PythonList)
     quantity = db.Column(db.Integer)
-    # in_decks = db.relationship("DeckCards", backref="cards")
-
-    @property
-    def to_json(self):
-        return dict(
-            id=self.id,
-            name=self.name,
-            mana_cost=self.mana_cost,
-            cmc=float(self.cmc),
-            type_line=self.type_line,
-            card_type=self.card_type.name,
-            image_url=self.image_url,
-            rarity=self.rarity.name,
-            edhrec=self.edhrec,
-            color_identity=self.color_identity,
-            quantity=self.quantity,
-        )
 
 
 def _gen_uuid():

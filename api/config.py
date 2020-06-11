@@ -3,6 +3,7 @@ from envconfig import EnvConfig
 
 
 class AppConfig(EnvConfig):
+    """Configuration for the app."""
 
     HOST = param.Str(required=True)
     PORT = param.Int(required=True)
@@ -14,8 +15,5 @@ class AppConfig(EnvConfig):
 
     ENABLE_CORS = param.Bool(default=False)
 
-    # DATABASE_URL = param.Str(
-    #     default="postgres://postgres:postgres@localhost:5432/dbname"
-    # )
     SQLALCHEMY_DATABASE_URI = param.Str(default="sqlite:///db.sqlite")
     SQLALCHEMY_TRACK_MODIFICATIONS = param.Bool(default=False)
