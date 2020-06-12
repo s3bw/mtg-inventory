@@ -13,7 +13,7 @@ class AppConfig(EnvConfig):
     DEBUG = param.Bool(default=False)
     LOG_LEVEL = param.Str(default="INFO")
 
-    ENABLE_CORS = param.Bool(default=False)
+    ENABLE_CORS = param.Bool(default=True)
 
     SQLALCHEMY_DATABASE_URI = param.Str(default="sqlite:///db.sqlite")
     SQLALCHEMY_TRACK_MODIFICATIONS = param.Bool(default=False)

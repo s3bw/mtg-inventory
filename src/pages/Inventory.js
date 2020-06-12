@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { Form } from "tabler-react";
 
 import { Table, FilterCards } from "../components";
+import APIClient from "../ApiClient";
 
 
 const styles = {
@@ -67,14 +68,28 @@ class SortCards extends React.Component {
 }
 
 class Inventory extends React.Component {
+
     state = {
-        initItems: this.props.items,
-        display: this.props.items,
+        initItems: [],
+        display: []
+    }
+
+    async componentDidMount () {
+        this.apiClient = new APIClient();
+
+        this.apiClient.fetchInventory()
+            .then((data) => {
+                this.setState({
+                    initItems: data,
+                    display: data
+                });
+            });
     }
 
     toggleFilter = (filter) => {
         let cards = this.state.initItems
 
+        console.log("Filtering")
         // If there are filters remove cards
         // that don't match the identity given
         // in the filters
@@ -93,6 +108,7 @@ class Inventory extends React.Component {
     toggleSorter = (sort) => {
         let cards = this.state.display
 
+        console.log("Sorting")
         if (sort !== this.props.sort) {
             cards.sort(compareFunc(sort))
         }
@@ -103,13 +119,16 @@ class Inventory extends React.Component {
         })
     }
 
-    render () {
-        var typeGrouped = groupBy(this.state.display, "card_type")
+    renderTable = (cards) => {
+        if (!cards) {
+            return <div>Loading...</div>;
+        }
+        var typeGrouped = groupBy(cards, "card_type")
 
+        console.log("Thinking about it")
         return (
-        <div style={styles.page}>
-            <h1 style={{color: "#fff"}}>Inventory</h1>
-            <div style={styles.content}>
+            <div>
+                Done
                 <Table creatures={typeGrouped.Creature}
                     instants={typeGrouped.Instant}
                     artifacts={typeGrouped.Artifact}
@@ -117,6 +136,18 @@ class Inventory extends React.Component {
                     lands={typeGrouped.Land}
                     sorcery={typeGrouped.Sorcery}
                 />
+            </div>
+        )
+    }
+
+    render () {
+
+        return (
+        <div style={styles.page}>
+            <h1 style={{color: "#fff"}}>Inventory</h1>
+            <div style={styles.content}>
+                {this.renderTable(this.props.display)}
+
                 <div style={styles.sideBarContainer}>
                     <div style={styles.sideBar}>
                         <FilterCards onChange={this.toggleFilter}/>
@@ -157,7 +188,7 @@ var groupBy = function(xs, key) {
 const mapStateToProps = (state) => {
     return {
         sort: state.sort,
-        items: state.items,
+        // items: state.items,
         addedItems: state.addedItems
     }
 }
