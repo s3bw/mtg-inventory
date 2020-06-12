@@ -52,7 +52,7 @@ class InventoryRoutes(Resource):
                             Cards.quantity - db.func.sum(DeckCards.quantity),
                         )
                     ],
-                    else_=0,
+                    else_=Cards.quantity,
                 ).label("inStock"),
                 Cards.card_type,
                 Cards.cmc,

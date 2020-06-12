@@ -19,17 +19,28 @@ class Card extends React.Component {
 
     render () {
         const item = this.props.card
+        // Card component has awareness of addedItems.
+        // We can then compute item.inDeck for each item.
 
         return (
             <GalleryCard className={styles.cardContainer}>
                 <GalleryCard.Image src={item.image_url} alt={`${item.name}`} />
                 <div className={styles.btnList}>
-                    <Button outline className={styles.btns} color="dark" icon="copy" right onClick={() => {this.handleRemove(item.id)}}>
+
+                    <Button outline className={styles.btns}
+                        color="dark" icon="copy" right
+                        onClick={() => {this.handleRemove(item.id)}}
+                    >
                         '{item.inStock}'
                     </Button>
-                    <Button outline className={styles.btns} color="dark" icon="book-open" right onClick={()=>{this.handleAdd(item.id)}}>
+
+                    <Button outline className={styles.btns}
+                        color="dark" icon="book-open" right
+                        onClick={()=>{this.handleAdd(item.id)}}
+                    >
                         '{item.inDeck}'
                     </Button>
+
                 </div>
             </GalleryCard>
         )

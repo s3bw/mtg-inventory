@@ -47,7 +47,7 @@ class PythonEnum(types.TypeDecorator):
     def process_bind_param(self, value, dialect):
         if isinstance(value, int):
             return value
-        return self._enumtype(value).name
+        return self._enumtype[value].name
 
     def process_result_value(self, value, dialect):
         return self._enumtype[value].name

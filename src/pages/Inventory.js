@@ -70,26 +70,37 @@ class SortCards extends React.Component {
 class Inventory extends React.Component {
 
     state = {
+        // Start without any items
         initItems: [],
-        display: []
+    }
+
+    _setStateAsync (state) {
+        return new Promise((resolve) => {
+            this.setState(state, resolve)
+        });
     }
 
     async componentDidMount () {
         this.apiClient = new APIClient();
 
-        this.apiClient.fetchInventory()
-            .then((data) => {
-                this.setState({
-                    initItems: data,
-                    display: data
-                });
+        console.log("Calling the API again!")
+        console.log(this.state.dataLoaded)
+        if (this.state.initItems === undefined || this.state.initItems.length === 0) {
+            const res = await this.apiClient.fetchInventory()
+
+            await this._setStateAsync({
+                // Data is loaded into initial items
+                initItems: res,
+                // Display all items
+                display: res,
             });
+        }
     }
 
     toggleFilter = (filter) => {
+        // Apply filter to all items
         let cards = this.state.initItems
 
-        console.log("Filtering")
         // If there are filters remove cards
         // that don't match the identity given
         // in the filters
@@ -106,29 +117,31 @@ class Inventory extends React.Component {
     }
 
     toggleSorter = (sort) => {
+        // Sort only those on display
         let cards = this.state.display
 
-        console.log("Sorting")
         if (sort !== this.props.sort) {
             cards.sort(compareFunc(sort))
         }
 
         this.setState({
             display: cards,
+            // Update the type of sort that has
+            // been applied
             sort: sort
         })
     }
 
     renderTable = (cards) => {
-        if (!cards) {
+        // If cards are not defined they have not
+        // been loaded
+        if (cards === undefined) {
             return <div>Loading...</div>;
         }
         var typeGrouped = groupBy(cards, "card_type")
 
-        console.log("Thinking about it")
         return (
             <div>
-                Done
                 <Table creatures={typeGrouped.Creature}
                     instants={typeGrouped.Instant}
                     artifacts={typeGrouped.Artifact}
@@ -146,7 +159,7 @@ class Inventory extends React.Component {
         <div style={styles.page}>
             <h1 style={{color: "#fff"}}>Inventory</h1>
             <div style={styles.content}>
-                {this.renderTable(this.props.display)}
+                {this.renderTable(this.state.display)}
 
                 <div style={styles.sideBarContainer}>
                     <div style={styles.sideBar}>
