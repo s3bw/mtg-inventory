@@ -42,6 +42,5 @@ class DeckItemSchema(Schema):
 
 class DeckSchema(Schema):
 
-    id = fields.String()
     name = fields.Str(required=True)
     items = fields.List(fields.Nested(DeckItemSchema), required=True)

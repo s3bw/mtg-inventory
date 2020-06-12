@@ -109,25 +109,17 @@ class AllDeckRoutes(Resource):
     @verify_payload(DeckSchema, unknown=INCLUDE)
     def post(self, payload):
         """Create a new deck."""
-        if "id" in payload:
-            deck = Decks.query.filter_by(id=payload["id"]).first()
-            if not deck:
-                return {"message": "Deck does not exist"}, 404
+        deck = Decks.query.filter_by(name=payload["name"]).first()
+        if deck:
+            return {"message": f"Deck of name '{payload['name']}' already exists!"}, 403
 
-            deck.name = payload["name"]
-            deleted_cards = DeckCards.query.filter_by(deck_id=deck.id).all()
-            for card in deleted_cards:
-                db.session.delete(card)
+        deck = Decks(name=payload["name"])
 
-        else:
-            deck = Decks(name=payload["name"])
-            db.session.add(deck)
-            db.session.commit()
-
+        db.session.add(deck)
         for item in payload["items"]:
             card = Cards.query.filter_by(id=item["id"]).first()
             if not card:
-                return {"message": "Card does not exist"}, 404
+                return {"message": f"Card of id '{item['id']}' does not exist"}, 404
 
             deck_card = DeckCards(
                 card_id=item["id"], deck_id=deck.id, quantity=item["quantity"],
@@ -150,6 +142,30 @@ class DeckRoutes(Resource):
         """Fetch a deck contents by it's id."""
         items = DeckCards.query.filter_by(deck_id=id).all()
         return [i.to_json for i in items]
+
+    @verify_payload(DeckSchema, unknown=INCLUDE)
+    def post(self, payload, id):
+        deck = Decks.query.filter_by(id=id).first()
+        if not deck:
+            return {"message": "Deck does not found"}, 404
+
+        deck.name = payload["name"]
+        deleted_cards = DeckCards.query.filter_by(deck_id=deck.id).all()
+        for card in deleted_cards:
+            db.session.delete(card)
+
+        for item in payload["items"]:
+            card = Cards.query.filter_by(id=item["id"]).first()
+            if not card:
+                return {"message": "Card does not exist"}, 404
+
+            deck_card = DeckCards(
+                card_id=item["id"], deck_id=deck.id, quantity=item["quantity"],
+            )
+            db.session.add(deck_card)
+
+        db.session.commit()
+        return {"message": "success"}
 
     def delete(self, id):
         """Delete a deck by id."""
