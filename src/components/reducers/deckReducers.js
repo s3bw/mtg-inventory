@@ -19,6 +19,7 @@ const deckReducer = (state = initState, action) => {
         return {
             ...state,
             items: action.data.items,
+            addedItems: action.data.addedItems,
             decks: action.data.decks,
             activeDeck: action.data.activeDeck
         }

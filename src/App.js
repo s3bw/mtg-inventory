@@ -78,7 +78,7 @@ class App extends React.Component {
 
                     if (selectedItem) {
                         item.inDeck = selectedItem.quantity
-                        selectedItems.push(selectedItem)
+                        selectedItems.push(item)
                     } else {
                         item.inDeck = 0
                     }
@@ -87,6 +87,7 @@ class App extends React.Component {
             }
 
             console.log("Calling the API again!")
+            console.log(selectedItems)
             await this._setStateAsync({
                 // Data is loaded into initial items
                 items: items,
