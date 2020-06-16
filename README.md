@@ -11,10 +11,13 @@ jupyter lab
 
 ```
 # After replacing the inventory file
-python create_card_list.py
+python scripts/create_card_list.py
 
 # Then gather data from scryfall
-python gether_scryfall_data.py
+python scripts/gather_scryfall_data.py
+
+# Construct dataset
+python scripts/create_dataset.py
 ```
 
 ## ScryFall API

@@ -2,7 +2,7 @@ import csv
 import json
 from pathlib import Path
 
-from toolz import keyfilter
+import requests
 
 from library import features
 from library.cards import base64_name
@@ -22,8 +22,10 @@ def read_csv(file_path):
 
 
 def write_success(line):
-    with open(SUCCESSFUL_CARDS, "a") as file:
-        file.write(json.dumps(line) + ",\n")
+    requests.post("http://localhost:4000/api/v1/inventory", json=line)
+
+    # with open(SUCCESSFUL_CARDS, "a") as file:
+    #     file.write(json.dumps(line) + ",\n")
 
 
 def write_failure(line):
@@ -70,7 +72,7 @@ def rename_and_drop(row):
         "card_type": row["card_type"],
         "image_url": row["image_url"],
         "rarity": row["rarity"],
-        "edhrec": row.get("edhrec_rank", 10000),
+        "edhrec": row.get("edhrec_rank", 90001),
         "color_identity": row["color_identity"],
         "quantity": row["Count"],
         "inDeck": 0,
@@ -132,6 +134,6 @@ def main(file_path):
 
 
 if __name__ == "__main__":
-    inventory = "test_file.csv"
+    # inventory = "test_file.csv"
     inventory = "./data/inventory.csv"
     main(inventory)
