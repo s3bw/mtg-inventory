@@ -4,7 +4,6 @@ import { connect } from "react-redux";
 import { Form } from "tabler-react";
 
 import { Table, FilterCards } from "../components";
-import APIClient from "../ApiClient";
 
 
 const styles = {
@@ -71,30 +70,8 @@ class Inventory extends React.Component {
 
     state = {
         // Start without any items
-        initItems: [],
-    }
-
-    _setStateAsync (state) {
-        return new Promise((resolve) => {
-            this.setState(state, resolve)
-        });
-    }
-
-    async componentDidMount () {
-        this.apiClient = new APIClient();
-
-        console.log("Calling the API again!")
-        console.log(this.state.dataLoaded)
-        if (this.state.initItems === undefined || this.state.initItems.length === 0) {
-            const res = await this.apiClient.fetchInventory()
-
-            await this._setStateAsync({
-                // Data is loaded into initial items
-                initItems: res,
-                // Display all items
-                display: res,
-            });
-        }
+        initItems: this.props.items,
+        display: this.props.items,
     }
 
     toggleFilter = (filter) => {
@@ -133,11 +110,7 @@ class Inventory extends React.Component {
     }
 
     renderTable = (cards) => {
-        // If cards are not defined they have not
-        // been loaded
-        if (cards === undefined) {
-            return <div>Loading...</div>;
-        }
+        console.log(cards)
         var typeGrouped = groupBy(cards, "card_type")
 
         return (
@@ -201,7 +174,7 @@ var groupBy = function(xs, key) {
 const mapStateToProps = (state) => {
     return {
         sort: state.sort,
-        // items: state.items,
+        items: state.items,
         addedItems: state.addedItems
     }
 }

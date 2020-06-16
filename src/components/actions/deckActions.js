@@ -1,4 +1,13 @@
-import { ADD_TO_DECK, REMOVE_FROM_DECK } from './action-types/deck-actions'
+import { ADD_TO_DECK, REMOVE_FROM_DECK, INIT_ITEMS } from './action-types/deck-actions'
+
+
+export const initState = (data) => {
+    return {
+        type: INIT_ITEMS,
+        data
+    }
+}
+
 
 //add deck action
 export const addToDeck = (id) => {

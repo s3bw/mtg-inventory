@@ -1,42 +1,28 @@
-import { ADD_TO_DECK, REMOVE_FROM_DECK } from '../actions/action-types/deck-actions'
+import { ADD_TO_DECK, REMOVE_FROM_DECK, INIT_ITEMS } from '../actions/action-types/deck-actions'
 import { EDIT_DECK, DELETE_DECK } from '../actions/action-types/library-actions'
 
 import json from "./data.json";
 
 
 const initState = {
-    items: json,
-    addedItems: [],
-    activeDeck: {
-        id: 0,
-        name: "Untitled Deck",
-    },
-    total: 0,
-    decks: [
-        {
-            id: 1,
-            name: "White/Black",
-            items: []
-        },
-        {
-            id: 2,
-            name: "Black/Green",
-            items: []
-        },
-        {
-            id: 3,
-            name: "Blue Artifacts",
-            items: []
-        },
-        {
-            id: 4,
-            name: "Red Aggro",
-            items: []
-        },
-    ]
+    // items: json,
+    items: undefined,
+    addedItems: undefined,
+    activeDeck: undefined,
+    decks: undefined
 }
 
 const deckReducer = (state = initState, action) => {
+
+    if (action.type === INIT_ITEMS) {
+
+        return {
+            ...state,
+            items: action.data.items,
+            decks: action.data.decks,
+            activeDeck: action.data.activeDeck
+        }
+    }
 
     // Edit a deck from the deck list
     if (action.type === EDIT_DECK) {
