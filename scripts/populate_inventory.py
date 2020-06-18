@@ -134,6 +134,6 @@ def main(file_path):
 
 
 if __name__ == "__main__":
-    # inventory = "test_file.csv"
-    inventory = "./data/inventory.csv"
+    inventory = "test_file.csv"
+    # inventory = "./data/inventory.csv"
     main(inventory)

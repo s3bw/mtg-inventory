@@ -18,6 +18,20 @@ python scripts/gather_scryfall_data.py
 
 # Construct dataset
 python scripts/create_dataset.py
+
+# Create DB
+flask db upgrade
+
+# Have a default deck
+curl -XPOST localhost:4000/api/v1/deck \
+    -H 'Content-Type: application/json' \
+    -d '{"name": "B/W Deck", "items": []}'
+
+# Run server
+python app.py
+
+# Populate inventory
+python scripts/populate_inventory.py
 ```
 
 ## ScryFall API

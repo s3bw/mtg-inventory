@@ -2,9 +2,7 @@ import React from "react";
 
 import { connect } from "react-redux";
 
-import { Table, Dashboard } from "../components";
-
-import { Button, Form } from "tabler-react";
+import { Table, Dashboard, SaveDeck } from "../components";
 
 
 const styles = {
@@ -24,18 +22,7 @@ const styles = {
         "max-width": "400px",
         "min-width": "400px"
     },
-    deckTitle: {
-        display: "flex",
-        justifyContent: "space-between",
-        marginBottom: "20px"
-    },
-    deckActions: {
-        width: "150px",
-        display: "flex",
-        justifyContent: "space-between",
-    }
 }
-
 
 class Deck extends React.Component {
     render() {
@@ -55,18 +42,9 @@ class Deck extends React.Component {
                     />
 
                     <div style={styles.sideBar}>
-
-                        <div style={styles.deckTitle}>
-                            <Form.Input name="deckname" placeholder={this.props.activeDeck.name} />
-                            <div style={styles.deckActions}>
-                                <Button color="dark">Save</Button>
-                                <Button color="dark">Save As</Button>
-                            </div>
-                        </div>
-
+                        <SaveDeck />
                         <Dashboard items={this.props.items}/>
                     </div>
-
                 </div>
             </div>
         )

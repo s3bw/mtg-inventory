@@ -1,0 +1,20 @@
+.deckTitle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.deckActions {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formStyle {
+    width: 100%;
+    display: contents;
+}
+
+.formInput {
+    width: 59%;
+}
