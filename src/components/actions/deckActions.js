@@ -4,12 +4,22 @@ import {
     INIT_ITEMS,
     CREATE_DECK,
     UPDATE_DECK,
+    CHANGE_ACTIVE_DECK,
 } from './action-types/deck-actions'
+
 
 // Initialise application's state
 export const initState = (data) => {
     return {
         type: INIT_ITEMS,
+        data
+    }
+}
+
+// Change active deck
+export const changeActiveDeck = (data) => {
+    return {
+        type: CHANGE_ACTIVE_DECK,
         data
     }
 }

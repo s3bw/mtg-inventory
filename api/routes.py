@@ -121,6 +121,10 @@ class AllDeckRoutes(Resource):
             if not card:
                 return {"message": f"Card of id '{item['id']}' does not exist"}, 404
 
+            # InStock is calculated in GET route
+            # if item["quantity"] > card.inStock:
+            #     return {"message": f"{card.name} out of stock"}, 400
+
             deck_card = DeckCards(
                 card_id=item["id"], deck_id=deck.id, quantity=item["quantity"],
             )

@@ -1,5 +1,5 @@
 from marshmallow import Schema, fields
-from marshmallow.validate import OneOf
+from marshmallow.validate import OneOf, Length
 
 
 CARD_TYPES = [
@@ -42,5 +42,5 @@ class DeckItemSchema(Schema):
 
 class DeckSchema(Schema):
 
-    name = fields.Str(required=True)
+    name = fields.Str(required=True, validate=[Length(min=6, max=36)])
     items = fields.List(fields.Nested(DeckItemSchema), required=True)

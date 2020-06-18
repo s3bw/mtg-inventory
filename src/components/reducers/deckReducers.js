@@ -1,4 +1,9 @@
-import { ADD_TO_DECK, REMOVE_FROM_DECK, INIT_ITEMS } from '../actions/action-types/deck-actions'
+import {
+    ADD_TO_DECK,
+    REMOVE_FROM_DECK,
+    INIT_ITEMS,
+    CHANGE_ACTIVE_DECK
+} from '../actions/action-types/deck-actions'
 import { EDIT_DECK, DELETE_DECK } from '../actions/action-types/library-actions'
 
 import json from "./data.json";
@@ -14,14 +19,22 @@ const initState = {
 
 const deckReducer = (state = initState, action) => {
 
+    // Initialise inventory data
     if (action.type === INIT_ITEMS) {
-
         return {
             ...state,
             items: action.data.items,
             addedItems: action.data.addedItems,
             decks: action.data.decks,
             activeDeck: action.data.activeDeck
+        }
+    }
+
+    // Change active deck
+    if (action.type === CHANGE_ACTIVE_DECK) {
+        return {
+            ...state,
+            activeDeck: action.data
         }
     }
 
