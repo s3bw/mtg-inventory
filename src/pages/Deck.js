@@ -8,19 +8,19 @@ import { Table, Dashboard, SaveDeck } from "../components";
 const styles = {
     page: {
         display: "flex",
-        "padding-top": "10px",
-        "padding-left": "10px",
-        "padding-right": "10px",
-        "flex-direction": "column",
+        paddingTop: "10px",
+        paddingLeft: "10px",
+        paddingRight: "10px",
+        flexDirection: "column",
     },
     content: {
         display: "flex",
-        "flex-direction": "row",
-        "justify-content": "space-between",
+        flexDirection: "row",
+        justifyContent: "space-between",
     },
     sideBar: {
-        "max-width": "400px",
-        "min-width": "400px"
+        maxWidth: "400px",
+        minWidth: "400px"
     },
 }
 

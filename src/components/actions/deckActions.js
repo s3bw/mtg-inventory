@@ -5,7 +5,10 @@ import {
     CREATE_DECK,
     UPDATE_DECK,
     CHANGE_ACTIVE_DECK,
+    EDIT_DECK,
+    DELETE_DECK,
 } from './action-types/deck-actions'
+
 
 
 // Initialise application's state
@@ -21,6 +24,22 @@ export const changeActiveDeck = (data) => {
     return {
         type: CHANGE_ACTIVE_DECK,
         data
+    }
+}
+
+// Edit selected deck
+export const editDeck = (data) => {
+    return {
+        type: EDIT_DECK,
+        data
+    }
+}
+
+// Delete selected deck
+export const deleteDeck = (id) => {
+    return {
+        type: DELETE_DECK,
+        id
     }
 }
 

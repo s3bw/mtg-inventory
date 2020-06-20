@@ -2,15 +2,13 @@ import {
     ADD_TO_DECK,
     REMOVE_FROM_DECK,
     INIT_ITEMS,
-    CHANGE_ACTIVE_DECK
+    CHANGE_ACTIVE_DECK,
+    EDIT_DECK,
+    DELETE_DECK
 } from '../actions/action-types/deck-actions'
-import { EDIT_DECK, DELETE_DECK } from '../actions/action-types/library-actions'
-
-import json from "./data.json";
 
 
 const initState = {
-    // items: json,
     items: undefined,
     addedItems: undefined,
     activeDeck: undefined,
@@ -40,11 +38,11 @@ const deckReducer = (state = initState, action) => {
 
     // Edit a deck from the deck list
     if (action.type === EDIT_DECK) {
-        let selected = state.decks.find(item=> item.id === action.id)
-
         return {
             ...state,
-            activeDeck: selected
+            items: action.data.items,
+            addedItems: action.data.addedItems,
+            activeDeck: action.data.activeDeck
         }
     }
 

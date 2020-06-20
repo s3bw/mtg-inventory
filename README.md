@@ -7,10 +7,10 @@ pip install -r requirements-data.txt
 jupyter lab
 ```
 
-## Update data
+## Update data and start backend
 
-```
-# After replacing the inventory file
+```bash
+# After exporting card to data/inventory.csv
 python scripts/create_card_list.py
 
 # Then gather data from scryfall
@@ -32,6 +32,12 @@ python app.py
 
 # Populate inventory
 python scripts/populate_inventory.py
+```
+
+### Starting the frontend
+
+```
+npm start
 ```
 
 ## ScryFall API
