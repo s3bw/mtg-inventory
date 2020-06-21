@@ -2,15 +2,13 @@ import {
     ADD_TO_DECK,
     REMOVE_FROM_DECK,
     INIT_ITEMS,
-    CHANGE_ACTIVE_DECK
+    CHANGE_ACTIVE_DECK,
+    EDIT_DECK,
+    DELETE_DECK
 } from '../actions/action-types/deck-actions'
-import { EDIT_DECK, DELETE_DECK } from '../actions/action-types/library-actions'
-
-import json from "./data.json";
 
 
 const initState = {
-    // items: json,
     items: undefined,
     addedItems: undefined,
     activeDeck: undefined,
@@ -40,11 +38,11 @@ const deckReducer = (state = initState, action) => {
 
     // Edit a deck from the deck list
     if (action.type === EDIT_DECK) {
-        let selected = state.decks.find(item=> item.id === action.id)
-
         return {
             ...state,
-            activeDeck: selected
+            items: action.data.items,
+            addedItems: action.data.addedItems,
+            activeDeck: action.data.activeDeck
         }
     }
 
@@ -52,20 +50,12 @@ const deckReducer = (state = initState, action) => {
     if (action.type === DELETE_DECK) {
         let newDecks = state.decks.filter(item=> item.id !== action.id)
 
-        // If the active deck is being deleted
-        // default to the initState deck (which
-        // is untitled and empty).
-        if (action.id === state.activeDeck.id) {
-            return {
-                ...state,
-                activeDeck: initState.activeDeck,
-                decks: newDecks,
-            }
-        }
-
         return {
             ...state,
+            items: action.data.items,
+            addedItems: action.data.addedItems,
             decks: newDecks,
+            activeDeck: action.data.activeDeck
         }
 
     }

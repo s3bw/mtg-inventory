@@ -9,19 +9,19 @@ import { Table, FilterCards } from "../components";
 const styles = {
     page: {
         display: "flex",
-        "padding-top": "10px",
-        "padding-left": "10px",
-        "padding-right": "10px",
-        "flex-direction": "column",
+        paddingTop: "10px",
+        paddingLeft: "10px",
+        paddingRight: "10px",
+        flexDirection: "column",
     },
     content: {
         display: "flex",
-        "flex-direction": "row",
-        "justify-content": "space-between",
+        flexDirection: "row",
+        justifyContent: "space-between",
     },
     sideBarContainer: {
-        "max-width": "150px",
-        "min-width": "150px"
+        maxWidth: "150px",
+        minWidth: "150px"
     },
     sideBar: {
         position: "fixed",
