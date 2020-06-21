@@ -50,20 +50,12 @@ const deckReducer = (state = initState, action) => {
     if (action.type === DELETE_DECK) {
         let newDecks = state.decks.filter(item=> item.id !== action.id)
 
-        // If the active deck is being deleted
-        // default to the initState deck (which
-        // is untitled and empty).
-        if (action.id === state.activeDeck.id) {
-            return {
-                ...state,
-                activeDeck: initState.activeDeck,
-                decks: newDecks,
-            }
-        }
-
         return {
             ...state,
+            items: action.data.items,
+            addedItems: action.data.addedItems,
             decks: newDecks,
+            activeDeck: action.data.activeDeck
         }
 
     }

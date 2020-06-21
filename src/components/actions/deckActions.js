@@ -36,10 +36,11 @@ export const editDeck = (data) => {
 }
 
 // Delete selected deck
-export const deleteDeck = (id) => {
+export const deleteDeck = (id, data) => {
     return {
         type: DELETE_DECK,
-        id
+        id,
+        data
     }
 }
 

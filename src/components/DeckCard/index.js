@@ -9,7 +9,7 @@ import APIClient from "../../ApiClient";
 import styles from "./style.module.css";
 
 
-async function fetchInventoryAndDeck(id, apiClient, deckCards) {
+async function updateInventory(apiClient, deckCards) {
     const items = await apiClient.fetchInventory()
 
     var selectedItems = [];
@@ -44,7 +44,7 @@ class DeckCard extends React.Component {
 
     handleEditDeck = async (id) => {
         let deckCards = await this.apiClient.fetchDeck(id)
-        let data = await fetchInventoryAndDeck(id, this.apiClient, deckCards)
+        let data = await updateInventory(this.apiClient, deckCards)
 
         let deckToEdit = this.props.decks.find(item => item.id === id)
         data.activeDeck = deckToEdit
@@ -59,20 +59,25 @@ class DeckCard extends React.Component {
     }
 
     handleDeleteDeck = async (id) => {
-        // Check if the active deck is being deleted
-        if (id === this.props.activeDeck.id && this.props.decks.length > 1) {
-            // Set to a new appropriate active deck.
-            let deckCards = await this.apiClient.fetchDeck(id)
-        } else if (id === this.props.activeDeck.id && this.props.decks.length === 1 ){
-            // Set to default deck
-            let deckCards = await this.apiClient.fetchDeck(id)
+        let data;
+
+        if (id !== this.props.activeDeck.id) {
+            await this.apiClient.deleteDeck(id)
+
+            data = await updateInventory(this.apiClient, this.props.items)
+
+        } else if (this.props.decks.length > 1) {
+            let newDecks = this.props.decks.filter(item=> item.id !== id)
+            let newActiveDeck = newDecks[0]
+            let deckCards = await this.apiClient.fetchDeck(newActiveDeck.id)
+
+            await this.apiClient.deleteDeck(id)
+            data = await updateInventory(this.apiClient, deckCards)
+
         } else {
-            let deckCards = this.props.selectedItems
+            // TODO: No decks exists.
         }
-
-        let data = await fetchInventoryAndDeck(id, this.apiClient, deckCards)
-
-        this.props.deleteDeck(data);
+        this.props.deleteDeck(id, data);
         this.setState({
             deleting: false
         })
@@ -81,19 +86,33 @@ class DeckCard extends React.Component {
     render () {
         const item = this.props.deck
 
-        let button;
+        let deleteButton;
         if (this.state.deleting) {
-            button = (
+            deleteButton = (
                 <Button color="danger"
                     onClick={() => {this.handleDeleteDeck(item.id)}}
                 >Confirm?</Button>
             )
         } else {
-            button = (
+            deleteButton = (
                 <Button outline color="danger"
                     onClick={this.handleDeleteToggle}
                 >Delete</Button>
             )
+        }
+
+        let editButton;
+        if (this.props.activeDeck.id === item.id) {
+            editButton = (
+                <Button color="dark" disabled
+                >Editing</Button>
+            )
+        } else {
+                editButton = (
+                    <Button color="dark"
+                        onClick={() => {this.handleEditDeck(item.id)}}
+                    >Edit</Button>
+                )
         }
 
         return (
@@ -101,10 +120,8 @@ class DeckCard extends React.Component {
                 <div className={styles.deckCardContent}>
                     <div>{item.name}</div>
                     <div className={styles.deckCardBtns}>
-                        <Button color="dark"
-                            onClick={() => {this.handleEditDeck(item.id)}}
-                        >Edit</Button>
-                        {button}
+                        {editButton}
+                        {deleteButton}
                     </div>
                 </div>
             </Card>
@@ -116,7 +133,7 @@ class DeckCard extends React.Component {
 const mapDispatchToProps = (dispatch) => {
     return{
         editDeck: (data) => {dispatch(editDeck(data))},
-        deleteDeck: (id) => {dispatch(deleteDeck(id))}
+        deleteDeck: (id, data) => {dispatch(deleteDeck(id, data))}
     }
 }
 
