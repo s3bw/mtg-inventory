@@ -27,6 +27,15 @@ jupyter lab
 
 ## Update data and start backend
 
+Install dependencies
+
+```
+pipenv shell
+pipenv install --skip-lock
+```
+
+Populate data/server
+
 ```bash
 # After exporting card to data/inventory.csv
 python scripts/create_card_list.py
