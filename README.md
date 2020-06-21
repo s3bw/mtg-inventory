@@ -1,5 +1,23 @@
 # MTG Inventory
 
+## Inventory
+
+Manage cards from inventory screen
+
+![](docs/inventory.png)
+
+## Deck
+
+Analyse deck composition
+
+![](docs/deck.png)
+
+## Libraries
+
+Store multiple decks
+
+![](docs/libraries.png)
+
 ## Jupyter Lab
 
 ```

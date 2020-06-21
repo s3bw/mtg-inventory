@@ -66,6 +66,8 @@ class DeckCard extends React.Component {
 
             data = await updateInventory(this.apiClient, this.props.items)
 
+            data.activeDeck = this.props.activeDeck
+
         } else if (this.props.decks.length > 1) {
             let newDecks = this.props.decks.filter(item=> item.id !== id)
             let newActiveDeck = newDecks[0]
@@ -73,6 +75,7 @@ class DeckCard extends React.Component {
 
             await this.apiClient.deleteDeck(id)
             data = await updateInventory(this.apiClient, deckCards)
+            data.activeDeck = newActiveDeck
 
         } else {
             // TODO: No decks exists.
@@ -101,6 +104,8 @@ class DeckCard extends React.Component {
             )
         }
 
+        console.log(this.props.activeDeck)
+        console.log(this.props.activeDeck.id)
         let editButton;
         if (this.props.activeDeck.id === item.id) {
             editButton = (
